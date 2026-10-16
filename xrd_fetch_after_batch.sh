@@ -3,7 +3,7 @@
 # finish, then pull the f01 immutable copy (never compete for the ~100 KB/s link).
 # Launched via: systemd-run --user --unit=phase0-xrd-fetch --collect ...
 set -u
-cd /home/shuix/projects/deepseekharness/beacon-paper/phase0 || exit 1
+cd "$(dirname "$0")" || exit 1
 echo "$(date -Is) [wait] for phase0-xrd-batch to finish" >> data/fetch.log
 while systemctl --user is-active --quiet phase0-xrd-batch; do
   sleep 30

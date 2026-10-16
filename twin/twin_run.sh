@@ -3,14 +3,24 @@
 # Cells: (1) f01 b=8 main pipeline; (2) f01 b=5 residual path; (3) MC Delphes b=5;
 #        (4) edge battery (ties/NaN/bin-edges/clamp); (5) NaN-phi refusal behaviour.
 #
+# Prerequisites:
+#   - ROOT 6.40.04 from CVMFS at the path below (environment fixes baked in; see README).
+#   - python3 with uproot + awkward (regenerates the edge-case ROOT files here).
+#   - Cells 1-2 additionally need the large NanoAOD input, NOT stored in this repository:
+#       data/nano_data2016_1-1.root  (CMS Open Data; see uris-local-f01.txt and the fetch
+#       tooling xrd_fetch_resume.py)
+#   - Cell 3 additionally needs a Delphes sample, NOT stored here:
+#       mc/minbias_delphes.root      (regenerate with mc/minbias.cmnd, Pythia8 8.317 + Delphes CMS card)
+#   Missing inputs => the affected cells are SKIPPED with instructions; cells 4-5 always run.
+#
 # Environment lessons baked in (2026-10-16, all encountered live):
 #   - LCG ROOT's Cling needs `x86_64-linux-gnu-g++-11` on PATH (compiler probe at startup;
-#     without it CI creation fails / stale-interpreter paths misbehave) -> symlink g++-13.
+#     without it CI creation fails) -> symlink any system g++ under that name.
 #   - Externals tbb/pcre2 from LCG releases must be on LD_LIBRARY_PATH (root-config --libs
 #     does not carry them).
 #   - CVMFS lazy-pull on .pcm/.so can D-stall mmap page faults (folio_wait_bit_common).
 #     Prewarm once before running:
-#       find $R/lib -maxdepth 1 -type f | xargs -P 8 -I{} sh -c 'cat "{}" > /dev/null'
+#       find $ROOT_DIR/lib -maxdepth 1 -type f | xargs -P 8 -I{} sh -c 'cat "{}" > /dev/null'
 set -euo pipefail
 cd "$(dirname "$0")/.."          # phase0/
 
@@ -32,20 +42,30 @@ g++ -O2 -std=c++17 $("$ROOT_DIR/bin/root-config" --cflags) twin/phase0_extract_t
     -L"$TB" -L"$PC" $("$ROOT_DIR/bin/root-config" --libs) -ltbb -Wl,-rpath,"$TB" -Wl,-rpath,"$PC"
 echo "build ok"
 
-pass=0; fail=0
+pass=0; fail=0; skip=0
 check() { if cmp -s "$2" "$3"; then echo "MATCH  $1 ✅"; pass=$((pass+1)); else echo "MISMATCH $1 ❌"; fail=$((fail+1)); fi; }
+skipped() { echo "SKIP   $1 — $2"; skip=$((skip+1)); }
 
-echo "== (1) f01 b=8 (main pipeline) =="
-twin/twin_bin data/nano_data2016_1-1.root "$OUTDIR/f01" --b 8 --pt-min 20
-check "f01-b8 vs frozen runG/f01.bits.bin" runG/f01.bits.bin "$OUTDIR/f01.bits.bin"
+echo "== prerequisites =="
+python3 twin/make_edge_cases.py > /dev/null && echo "edge-case ROOT files regenerated (deterministic)"
 
-echo "== (2) f01 b=5 (residual path, 6 bits discarded) =="
-twin/twin_bin data/nano_data2016_1-1.root "$OUTDIR/f01b5" --b 5 --pt-min 20
-check "f01-b5 vs python ref" refix-2026-10-16/f01b5.bits.bin "$OUTDIR/f01b5.bits.bin"
+echo "== (1)(2) f01 b=8 / b=5 (main pipeline + residual path) =="
+if [ -f data/nano_data2016_1-1.root ]; then
+  twin/twin_bin data/nano_data2016_1-1.root "$OUTDIR/f01" --b 8 --pt-min 20
+  check "f01-b8 vs frozen runG/f01.bits.bin" runG/f01.bits.bin "$OUTDIR/f01.bits.bin"
+  twin/twin_bin data/nano_data2016_1-1.root "$OUTDIR/f01b5" --b 5 --pt-min 20
+  check "f01-b5 vs python ref" refix-2026-10-16/f01b5.bits.bin "$OUTDIR/f01b5.bits.bin"
+else
+  skipped "cells 1-2" "data/nano_data2016_1-1.root absent — fetch per uris-local-f01.txt (tooling: xrd_fetch_resume.py)"
+fi
 
 echo "== (3) MC Delphes b=5 =="
-twin/twin_bin mc/minbias_delphes.root "$OUTDIR/mc-b5" --mc --b 5 --pt-min 20
-check "mc-b5 vs python ref" refix-2026-10-16/mc-b5.bits.bin "$OUTDIR/mc-b5.bits.bin"
+if [ -f mc/minbias_delphes.root ]; then
+  twin/twin_bin mc/minbias_delphes.root "$OUTDIR/mc-b5" --mc --b 5 --pt-min 20
+  check "mc-b5 vs python ref" refix-2026-10-16/mc-b5.bits.bin "$OUTDIR/mc-b5.bits.bin"
+else
+  skipped "cell 3" "mc/minbias_delphes.root absent — regenerate with mc/minbias.cmnd (Pythia8 8.317 + Delphes CMS card)"
+fi
 
 echo "== (4) edge battery (ties / NaN / bin-edges / clamp) =="
 twin/twin_bin twin/edge_cases.root "$OUTDIR/edge-twin" --b 8 --pt-min 20
@@ -59,5 +79,9 @@ else
   if [ "$rc" = "3" ]; then echo "refusal ✅ (rc=3)"; pass=$((pass+1)); else echo "refusal rc=$rc ⚠️"; fail=$((fail+1)); fi
 fi
 
-echo; echo "BATTERY: $pass pass / $fail fail"
-[ "$fail" = "0" ] && echo "Result: all cells bit-identical (main + residual + MC + edge + refusal)"
+echo; echo "BATTERY: $pass pass / $fail fail / $skip skipped"
+if [ "$fail" = "0" ] && [ "$skip" = "0" ]; then
+  echo "Result: all cells bit-identical (main + residual + MC + edge + refusal)"
+elif [ "$fail" = "0" ]; then
+  echo "self-contained cells green ✅ (place the large inputs to unlock the skipped cells; see header)"
+fi

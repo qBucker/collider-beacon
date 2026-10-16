@@ -3,7 +3,7 @@
 # Skips files whose manifest exists (self-healing on restart); circuit breaker
 # after 3 consecutive failures (politeness: stop instead of hammering CERN).
 set -u
-cd /home/shuix/projects/deepseekharness/beacon-paper/phase0 || exit 1
+cd "$(dirname "$0")" || exit 1
 LOG=xrd-batch.log
 ok=0; skip=0; fail=0; consec=0
 i=0

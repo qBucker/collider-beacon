@@ -37,6 +37,8 @@ python3 xrd_run.py phase0_extract.py --files uris-local-f01.txt --out out/f01 --
 python3 phase0_verify.py out/f01.manifest.json
 ```
 
+*Prerequisites:* battery cells 1–3 need large inputs that are **not** stored here — `data/nano_data2016_1-1.root` (CMS Open Data; fetch per `uris-local-f01.txt`, tooling in `xrd_fetch_resume.py`) and `mc/minbias_delphes.root` (regenerate with `mc/minbias.cmnd`: Pythia8 8.317 + Delphes CMS card). Cells 4–5 run standalone; missing inputs are skipped with instructions.
+
 C++/ROOT twin (ROOT 6.40.04 from CVMFS; the script bakes in the environment fixes below):
 
 ```bash

@@ -4,10 +4,9 @@
 # robustness section of the paper. NOT auto-launched: run after round 1 completes
 # and round-1 results have been eyeballed.
 #   systemd-run --user --unit=phase0-xrd-batch2 --collect \
-#     --working-directory=/home/shuix/projects/deepseekharness/beacon-paper/phase0 \
-#     /bin/bash /home/shuix/projects/deepseekharness/beacon-paper/phase0/xrd_batch2.sh
+#     --working-directory="$(pwd)" /bin/bash "$(pwd)/xrd_batch2.sh"   # run from this dir
 set -u
-cd /home/shuix/projects/deepseekharness/beacon-paper/phase0 || exit 1
+cd "$(dirname "$0")" || exit 1
 LIST="${1:-uris.txt}"   # optional: pass a shorter file list, e.g. uris-2v.txt (5-file sample)
 LOG="xrd-batch2-$(basename "$LIST" .txt).log"
 mkdir -p runG2
