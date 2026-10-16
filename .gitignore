@@ -5,3 +5,4 @@ tools/
 *.root
 twin/twin_bin
 mc/gen*.log
+xrd-batch.log
