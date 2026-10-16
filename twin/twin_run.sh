@@ -13,7 +13,7 @@
 #       mc/minbias_delphes.root      (regenerate with mc/minbias.cmnd, Pythia8 8.317 + Delphes CMS card)
 #   Missing inputs => the affected cells are SKIPPED with instructions; cells 4-5 always run.
 #
-# Environment lessons baked in (2026-10-16, all encountered live):
+# Environment settings applied (2026-10-16; observed during commissioning):
 #   - LCG ROOT's Cling needs `x86_64-linux-gnu-g++-11` on PATH (compiler probe at startup;
 #     without it CI creation fails) -> symlink any system g++ under that name.
 #   - Externals tbb/pcre2 from LCG releases must be on LD_LIBRARY_PATH (root-config --libs
@@ -43,8 +43,8 @@ g++ -O2 -std=c++17 $("$ROOT_DIR/bin/root-config" --cflags) twin/phase0_extract_t
 echo "build ok"
 
 pass=0; fail=0; skip=0
-check() { if cmp -s "$2" "$3"; then echo "MATCH  $1 ✅"; pass=$((pass+1)); else echo "MISMATCH $1 ❌"; fail=$((fail+1)); fi; }
-skipped() { echo "SKIP   $1 — $2"; skip=$((skip+1)); }
+check() { if cmp -s "$2" "$3"; then echo "PASS  $1"; pass=$((pass+1)); else echo "FAIL  $1 (byte mismatch)"; fail=$((fail+1)); fi; }
+skipped() { echo "SKIP  $1 - $2"; skip=$((skip+1)); }
 
 echo "== prerequisites =="
 python3 twin/make_edge_cases.py > /dev/null && echo "edge-case ROOT files regenerated (deterministic)"
@@ -73,15 +73,14 @@ check "edge vs python ref" refix-2026-10-16/twin/edge-py2.bits.bin "$OUTDIR/edge
 
 echo "== (5) NaN-phi refusal (expect rc=3; Python raises) =="
 if twin/twin_bin twin/edge_nanphi.root /tmp/nanphi-twin >/dev/null 2>&1; then
-  echo "refusal ❌ (exited 0)"; fail=$((fail+1))
+  echo "FAIL  refusal test (exited 0)"; fail=$((fail+1))
 else
   rc=$?
-  if [ "$rc" = "3" ]; then echo "refusal ✅ (rc=3)"; pass=$((pass+1)); else echo "refusal rc=$rc ⚠️"; fail=$((fail+1)); fi
+  if [ "$rc" = "3" ]; then echo "PASS  refusal test (rc=3)"; pass=$((pass+1)); else echo "FAIL  refusal test (rc=$rc)"; fail=$((fail+1)); fi
 fi
 
 echo; echo "BATTERY: $pass pass / $fail fail / $skip skipped"
-if [ "$fail" = "0" ] && [ "$skip" = "0" ]; then
-  echo "Result: all cells bit-identical (main + residual + MC + edge + refusal)"
-elif [ "$fail" = "0" ]; then
-  echo "self-contained cells green ✅ (place the large inputs to unlock the skipped cells; see header)"
+if [ "$fail" = "0" ]; then
+  echo "Result: all executed cells bit-identical to the Python references."
+  [ "$skip" -gt 0 ] && echo "Skipped cells require the large inputs listed in the header."
 fi
