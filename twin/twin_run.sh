@@ -4,7 +4,7 @@
 #        (4) edge battery (ties/NaN/bin-edges/clamp); (5) NaN-phi refusal behaviour.
 #
 # Prerequisites:
-#   - ROOT 6.40.04 from CVMFS at the path below (environment fixes baked in; see README).
+#   - ROOT 6.40.04 from CVMFS at the path below (environment settings applied; see README).
 #   - python3 with uproot + awkward (regenerates the edge-case ROOT files here).
 #   - Cells 1-2 additionally need the large NanoAOD input, NOT stored in this repository:
 #       data/nano_data2016_1-1.root  (CMS Open Data; see uris-local-f01.txt and the fetch
