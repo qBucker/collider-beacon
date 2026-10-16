@@ -1,0 +1,10 @@
+! Phase 0 prediction side: minimum-bias sample - Pythia 8.317, pp @ 13 TeV, SoftQCD:all
+! Fixed seed (pre-registration discipline); extraction parameters are recorded on the extraction side; this file is frozen
+Random:setSeed = on
+Random:seed = 20261016
+Beams:idA = 2212
+Beams:idB = 2212
+Beams:eCM = 13000.
+SoftQCD:all = on
+Main:numberOfEvents = 400000
+Main:timesAllowErrors = 100

@@ -1,0 +1,90 @@
+Phase 0 round-1 real-data summary — generated 2026-10-16 07:36:50 CST
+source: runG/f01..f67.manifest.json (XRootD remote reads, extractor P v1, pt>20, b=8, alpha=1e-6)
+
+file        n   h_min     chi2_p       ks_p  recheck  chi2_gate ks_gate
+f01     23006  6.9084  3.910e-01  2.464e-01       OK      PASS    PASS
+f02     34023  7.0337  8.199e-03  9.703e-02       OK      PASS    PASS
+f03     30921  7.0616  1.971e-01  4.699e-02       OK      PASS    PASS
+f04     17862  6.7166  3.510e-02  8.926e-01       OK      PASS    PASS
+f05     25535  6.9494  2.034e-01  2.311e-02       OK      PASS    PASS
+f06     20120  6.7937  1.618e-01  9.316e-02       OK      PASS    PASS
+f07     28420  6.9711  5.141e-02  2.158e-02       OK      PASS    PASS
+f08     35173  7.0549  1.782e-03  1.476e-01       OK      PASS    PASS
+f09      5418  5.9531  5.315e-01  6.301e-01       OK      PASS    PASS
+f10     75798  7.3235  1.170e-03  6.542e-03       OK      PASS    PASS
+f11    110342  7.4331  1.541e-07  9.528e-04       OK      FAIL    PASS
+f12     81113  7.3296  7.170e-09  3.541e-03       OK      FAIL    PASS
+f13     70929  7.2889  2.472e-05  7.477e-03       OK      PASS    PASS
+f14     83382  7.3274  7.744e-08  1.183e-02       OK      FAIL    PASS
+f15     57601  7.2476  3.471e-03  9.680e-02       OK      PASS    PASS
+f16     91956  7.3383  2.132e-08  1.858e-03       OK      FAIL    PASS
+f17    107865  7.4470  1.915e-05  1.230e-03       OK      PASS    PASS
+f18    114926  7.4417  4.697e-11  3.119e-03       OK      FAIL    PASS
+f19     89721  7.3709  1.081e-12  3.935e-05       OK      FAIL    PASS
+f20    103898  7.4468  3.786e-06  3.743e-03       OK      PASS    PASS
+f21     82606  7.3428  1.073e-03  5.595e-03       OK      PASS    PASS
+f22     93449  7.3761  1.432e-05  2.291e-02       OK      PASS    PASS
+f23    109175  7.4152  3.428e-06  2.562e-04       OK      PASS    PASS
+f24     90378  7.3694  5.631e-06  3.384e-03       OK      PASS    PASS
+f25     74929  7.2999  1.015e-05  9.959e-03       OK      PASS    PASS
+f26     91206  7.4099  5.701e-05  3.092e-02       OK      PASS    PASS
+f27     91471  7.4171  5.987e-04  1.624e-02       OK      PASS    PASS
+f28     83626  7.3476  4.397e-07  2.482e-03       OK      FAIL    PASS
+f29     77156  7.3668  3.097e-03  1.665e-01       OK      PASS    PASS
+f30    119239  7.4348  9.067e-11  1.893e-03       OK      FAIL    PASS
+f31     84746  7.3765  3.801e-06  1.258e-02       OK      PASS    PASS
+f32     68315  7.3181  2.253e-02  1.224e-01       OK      PASS    PASS
+f33     87043  7.3830  5.579e-04  3.418e-03       OK      PASS    PASS
+f34     96555  7.4232  7.114e-05  2.402e-03       OK      PASS    PASS
+f35     89507  7.4107  3.201e-03  1.099e-03       OK      PASS    PASS
+f36    110401  7.4086  2.187e-14  8.922e-03       OK      FAIL    PASS
+f37     94919  7.4044  1.545e-03  1.601e-02       OK      PASS    PASS
+f38     79380  7.3623  5.361e-03  4.180e-03       OK      PASS    PASS
+f39     90336  7.3537  4.913e-07  4.955e-06       OK      FAIL    PASS
+f40    105652  7.4331  1.391e-10  2.617e-04       OK      FAIL    PASS
+f41     99646  7.4087  9.232e-08  1.037e-02       OK      FAIL    PASS
+f42     96856  7.3511  1.520e-11  9.632e-04       OK      FAIL    PASS
+f43     88678  7.3910  6.465e-05  2.338e-02       OK      PASS    PASS
+f44     95695  7.4191  7.717e-08  3.209e-04       OK      FAIL    PASS
+f45     28528  6.9924  1.196e-01  4.981e-02       OK      PASS    PASS
+f46      2248  5.3468  6.580e-01  3.084e-01       OK      PASS    PASS
+f47    111469  7.4225  1.443e-15  1.728e-03       OK      FAIL    PASS
+f48    128982  7.4484  8.837e-14  3.239e-04       OK      FAIL    PASS
+f49      2925  5.5298  1.796e-01  3.616e-01       OK      PASS    PASS
+f50     84486  7.3818  3.459e-03  1.021e-01       OK      PASS    PASS
+f51     79387  7.3284  2.519e-04  1.110e-01       OK      PASS    PASS
+f52     85381  7.3240  1.673e-10  7.894e-03       OK      FAIL    PASS
+f53     38828  7.0533  3.093e-04  1.555e-03       OK      PASS    PASS
+f54     69881  7.2785  5.686e-08  5.094e-02       OK      FAIL    PASS
+f55     84782  7.3514  3.174e-05  1.116e-02       OK      PASS    PASS
+f56     62144  7.3002  7.114e-06  4.082e-02       OK      PASS    PASS
+f57     98075  7.4112  7.507e-06  3.378e-03       OK      PASS    PASS
+f58    102884  7.4272  2.024e-04  6.280e-02       OK      PASS    PASS
+f59    103784  7.4235  1.716e-05  1.080e-03       OK      PASS    PASS
+f60     54561  7.2103  1.748e-05  7.629e-02       OK      PASS    PASS
+f61    100585  7.4391  2.969e-07  5.549e-04       OK      FAIL    PASS
+f62     92782  7.3863  1.699e-09  2.392e-05       OK      FAIL    PASS
+f63     74722  7.3206  9.828e-07  3.395e-02       OK      FAIL    PASS
+f64     94213  7.4143  2.245e-06  4.237e-02       OK      PASS    PASS
+f65     95316  7.4017  3.994e-04  1.634e-03       OK      PASS    PASS
+f66     98600  7.3963  1.370e-09  1.644e-02       OK      FAIL    PASS
+f67    108235  7.4104  4.653e-10  1.721e-03       OK      FAIL    PASS
+
+POOLED: files=67 events=5,211,771 total_bits=41,694,168
+        max_bin=21863  h_min=7.8413 bits/event  chi2_p=0.000e+00
+        h_min gate (>=6): PASS
+        per-file chi2 gate (p>1e-6): 44/67 pass, 23 fail
+        per-file KS gate  (p>1e-6): 67/67 pass
+        chi2-fail n range: [69,881 .. 128,982]   pass n range: [2,248 .. 109,175]
+        recheck mismatches: 0
+        STS/dieharder (>=1e6 bits): READY
+
+Effect shape (pooled, ratio = count/expectation):
+  bin ratio: min=0.875 max=1.074 rms=0.0362
+  top excess bins (bin, phi_deg, ratio): (147, 27.4, 1.074), (254, 177.9, 1.061), (255, 179.3, 1.058)
+  top deficit bins (bin, phi_deg, ratio): (231, 145.5, 0.875), (230, 144.1, 0.882), (232, 147.0, 0.888)
+  72-sector folded ratio: min=0.893 max=1.057 rms=0.0344
+  stable deficit region bins 227-234 (phi ~ +139..+150 deg): pooled ratio=0.895; present in all 67 files (per-file 0.740..0.962)
+  interpretation per pre-registration (README effect #1): NOT an incident; conservative
+  entropy bound absorbs it; write-up as honest-accounting evidence. Exact hardware
+  attribution of the localized deficit deferred (shape narrower than smooth 72-fold).

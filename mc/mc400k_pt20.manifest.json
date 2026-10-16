@@ -1,0 +1,44 @@
+{
+  "extractor": "P v1: leading jet (max pT, |eta|<2.5, pT>50) -> phi -> 2^b uniform bins, MSB-first",
+  "params": {
+    "files": null,
+    "mc": "minbias_delphes_400k.root",
+    "out": "mc400k_pt20",
+    "b": 8,
+    "pt_min": 20.0,
+    "eta_max": 2.5,
+    "batch": "200 MB",
+    "max_events": 0,
+    "require_jetid": false,
+    "alpha": 1e-06
+  },
+  "files": [
+    {
+      "path": "minbias_delphes_400k.root",
+      "size": 8489372361,
+      "sha256": "63390208c35375ab74dac851c33514390f41346c8f7f97d96e0c6e6312ea2729"
+    }
+  ],
+  "events_with_bits": 5430,
+  "bins": 256,
+  "bin_width_mrad": 24.544,
+  "wall_time_s": 1.6,
+  "results": {
+    "chi2": 299.21399631675877,
+    "chi2_df": 255,
+    "chi2_p": 0.029781142940079497,
+    "ks_stat": 0.008599018448867346,
+    "ks_p": 0.8135017102457343,
+    "max_bin_count": 35,
+    "p_max_upper_CP_bonferroni": 0.015036505672569075,
+    "min_entropy_bits_per_event": 6.05538685112203,
+    "total_bits": 43440,
+    "total_min_entropy_bits_lower_bound": 32880.75060159263
+  },
+  "outputs": {
+    "bits_file": "mc400k_pt20.bits.bin",
+    "bits_sha256": "bb4293b4a3da0bb0c1a730cfc14dd9aef5dfb3f00e530b9852834d9b6b00b305"
+  },
+  "code_sha256": "f8622c7023c361a398f5a293448a2f311d44cca55b39191cf0638c64312529a1",
+  "timestamp_utc": "2026-10-15T13:12:32Z"
+}

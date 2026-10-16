@@ -1,0 +1,42 @@
+{
+  "extractor": "P v1: leading jet (max pT, |eta|<2.5, pT>20 GeV) -> phi -> 2^b uniform bins, MSB-first",
+  "params": {
+    "files": "twin/uris-edge.txt",
+    "mc": null,
+    "out": "refix-2026-10-16/twin/edge-py2",
+    "b": 8,
+    "pt_min": 20.0,
+    "eta_max": 2.5,
+    "batch": "200 MB",
+    "max_events": 0,
+    "require_jetid": false,
+    "alpha": 1e-06
+  },
+  "files": [
+    {
+      "uri": "twin/edge_cases.root"
+    }
+  ],
+  "events_with_bits": 54,
+  "bins": 256,
+  "bin_width_mrad": 24.544,
+  "wall_time_s": 0.01,
+  "results": {
+    "chi2": 1216.5185185185185,
+    "chi2_df": 255,
+    "chi2_p": 0.0,
+    "ks_stat": 0.3070022306829495,
+    "ks_p": 5.1361238689149126e-05,
+    "max_bin_count": 10,
+    "p_max_upper_CP_bonferroni": 0.5778758507982762,
+    "min_entropy_bits_per_event": 0.7911685133654918,
+    "total_bits": 432,
+    "total_min_entropy_bits_lower_bound": 42.72309972173655
+  },
+  "outputs": {
+    "bits_file": "refix-2026-10-16/twin/edge-py2.bits.bin",
+    "bits_sha256": "34c8ba1370a2d31c15cd0907d30e0368ec90e59133bee1475e8cab5b8103ab84"
+  },
+  "code_sha256": "9272d4dfb2d420cb7cc46ef156c6f179161da8c023b11d34fa76b9c48f4d1f3e",
+  "timestamp_utc": "2026-10-16T13:07:17Z"
+}

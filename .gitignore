@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/
+tools/
+*.root
+twin/twin_bin
+mc/gen*.log

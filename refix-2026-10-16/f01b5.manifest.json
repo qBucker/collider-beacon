@@ -1,0 +1,42 @@
+{
+  "extractor": "P v1: leading jet (max pT, |eta|<2.5, pT>20 GeV) -> phi -> 2^b uniform bins, MSB-first",
+  "params": {
+    "files": "uris-local-f01.txt",
+    "mc": null,
+    "out": "refix-2026-10-16/f01b5",
+    "b": 5,
+    "pt_min": 20.0,
+    "eta_max": 2.5,
+    "batch": "200 MB",
+    "max_events": 0,
+    "require_jetid": false,
+    "alpha": 1e-06
+  },
+  "files": [
+    {
+      "uri": "data/nano_data2016_1-1.root"
+    }
+  ],
+  "events_with_bits": 23006,
+  "bins": 32,
+  "bin_width_mrad": 196.35,
+  "wall_time_s": 0.4,
+  "results": {
+    "chi2": 41.73919846996436,
+    "chi2_df": 31,
+    "chi2_p": 0.09430189218707363,
+    "ks_stat": 0.006735874138914633,
+    "ks_p": 0.2463795168632944,
+    "max_bin_count": 773,
+    "p_max_upper_CP_bonferroni": 0.04045927799482983,
+    "min_entropy_bits_per_event": 4.6273856148753785,
+    "total_bits": 115030,
+    "total_min_entropy_bits_lower_bound": 106457.63345582296
+  },
+  "outputs": {
+    "bits_file": "refix-2026-10-16/f01b5.bits.bin",
+    "bits_sha256": "b26b458974a584140b725707a2979ce4c6c429c581597fd142e03c31587d761e"
+  },
+  "code_sha256": "9272d4dfb2d420cb7cc46ef156c6f179161da8c023b11d34fa76b9c48f4d1f3e",
+  "timestamp_utc": "2026-10-16T12:32:58Z"
+}

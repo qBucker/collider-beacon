@@ -1,0 +1,27 @@
+{
+  "portal": {
+    "source": "opendata.cern.ch/api/records/31316 -> metadata._file_indices[0].files[0]",
+    "record": 31316,
+    "filename": "nano_data2016_1-1.root",
+    "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-1.root",
+    "size": 1098499319,
+    "published_checksum": "adler32:9a8ac2aa"
+  },
+  "local_copy": {
+    "path": "data/nano_data2016_1-1.root",
+    "size": 1098499319,
+    "adler32": "9a8ac2aa",
+    "sha256": "bcab7cef3442bf829b0d9f20ed6f45dddfed8ea47cdea1aefe7e25f692e79131",
+    "note": "portal publishes adler32 only; sha256 self-pinned here for future comparison"
+  },
+  "checks": {
+    "size_match": true,
+    "adler32_match": true
+  },
+  "determinism_gate": {
+    "description": "same file, two independent I/O paths (XRootD remote read vs local copy), extractor v1, identical params",
+    "remote_bits_sha256": "6bc096b75e09e179275631b232403cf61e1e9722a11af114a713173ff43213c5",
+    "local_bits_sha256": "6bc096b75e09e179275631b232403cf61e1e9722a11af114a713173ff43213c5",
+    "bit_identical": true
+  }
+}

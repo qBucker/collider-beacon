@@ -1,0 +1,44 @@
+{
+  "extractor": "P v1: leading jet (max pT, |eta|<2.5, pT>50) -> phi -> 2^b uniform bins, MSB-first",
+  "params": {
+    "files": null,
+    "mc": "minbias_delphes.root",
+    "out": "mc_minbias",
+    "b": 8,
+    "pt_min": 50.0,
+    "eta_max": 2.5,
+    "batch": "200 MB",
+    "max_events": 0,
+    "require_jetid": false,
+    "alpha": 1e-06
+  },
+  "files": [
+    {
+      "path": "minbias_delphes.root",
+      "size": 2122943768,
+      "sha256": "dfdff15d91cccadd2361a3475329bf3a74fa79966b2a37dda9544cd77461f898"
+    }
+  ],
+  "events_with_bits": 48,
+  "bins": 256,
+  "bin_width_mrad": 24.544,
+  "wall_time_s": 0.28,
+  "results": {
+    "chi2": 250.66666666666666,
+    "chi2_df": 255,
+    "chi2_p": 0.5649033695087082,
+    "ks_stat": 0.07460491706751715,
+    "ks_p": 0.9338969987427337,
+    "max_bin_count": 2,
+    "p_max_upper_CP_bonferroni": 0.4153678549325599,
+    "min_entropy_bits_per_event": 1.2675385236827164,
+    "total_bits": 384,
+    "total_min_entropy_bits_lower_bound": 60.841849136770385
+  },
+  "outputs": {
+    "bits_file": "mc_minbias.bits.bin",
+    "bits_sha256": "854f551845aba4f39d7b51fa167aa7c014765c67142864870d1290edf9a083a9"
+  },
+  "code_sha256": "f8622c7023c361a398f5a293448a2f311d44cca55b39191cf0638c64312529a1",
+  "timestamp_utc": "2026-10-15T12:01:20Z"
+}

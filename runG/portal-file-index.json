@@ -1,0 +1,409 @@
+{
+  "source": "opendata.cern.ch/api/records/31316 _file_indices[0]",
+  "description": "ZeroBias_PFNano_29-Feb-24_Run2016G-UL2016_MiniAODv2_PFNanoAODv1_root_file_index.json",
+  "n_files": 67,
+  "files": [
+    {
+      "filename": "nano_data2016_1-1.root",
+      "size": 1098499319,
+      "checksum": "adler32:9a8ac2aa",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-1.root"
+    },
+    {
+      "filename": "nano_data2016_1-2.root",
+      "size": 1444621706,
+      "checksum": "adler32:d2a6175b",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-2.root"
+    },
+    {
+      "filename": "nano_data2016_10.root",
+      "size": 4640942682,
+      "checksum": "adler32:de8cd053",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_10.root"
+    },
+    {
+      "filename": "nano_data2016_11.root",
+      "size": 3357412045,
+      "checksum": "adler32:52fef181",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_11.root"
+    },
+    {
+      "filename": "nano_data2016_12.root",
+      "size": 3105081086,
+      "checksum": "adler32:31f823a2",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_12.root"
+    },
+    {
+      "filename": "nano_data2016_13.root",
+      "size": 3447424018,
+      "checksum": "adler32:6d06cb8b",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_13.root"
+    },
+    {
+      "filename": "nano_data2016_14.root",
+      "size": 2600071868,
+      "checksum": "adler32:b7378f30",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_14.root"
+    },
+    {
+      "filename": "nano_data2016_15.root",
+      "size": 3940373309,
+      "checksum": "adler32:20a51fa1",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_15.root"
+    },
+    {
+      "filename": "nano_data2016_16.root",
+      "size": 4587854361,
+      "checksum": "adler32:5a0441d3",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_16.root"
+    },
+    {
+      "filename": "nano_data2016_17.root",
+      "size": 4760463013,
+      "checksum": "adler32:a12a8f2e",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_17.root"
+    },
+    {
+      "filename": "nano_data2016_18.root",
+      "size": 3749642930,
+      "checksum": "adler32:536ca237",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_18.root"
+    },
+    {
+      "filename": "nano_data2016_19.root",
+      "size": 4514554761,
+      "checksum": "adler32:f4db1c22",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_19.root"
+    },
+    {
+      "filename": "nano_data2016_1-3.root",
+      "size": 1328814455,
+      "checksum": "adler32:8b6d7fa4",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-3.root"
+    },
+    {
+      "filename": "nano_data2016_2.root",
+      "size": 3752184266,
+      "checksum": "adler32:deb067a2",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_2.root"
+    },
+    {
+      "filename": "nano_data2016_20.root",
+      "size": 4020172160,
+      "checksum": "adler32:ad8c278c",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_20.root"
+    },
+    {
+      "filename": "nano_data2016_21.root",
+      "size": 4610175474,
+      "checksum": "adler32:0ad029e9",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_21.root"
+    },
+    {
+      "filename": "nano_data2016_22.root",
+      "size": 3992652478,
+      "checksum": "adler32:a6f037a9",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_22.root"
+    },
+    {
+      "filename": "nano_data2016_23.root",
+      "size": 3151232753,
+      "checksum": "adler32:d17f0982",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_23.root"
+    },
+    {
+      "filename": "nano_data2016_24.root",
+      "size": 4061590980,
+      "checksum": "adler32:729f9a50",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_24.root"
+    },
+    {
+      "filename": "nano_data2016_25.root",
+      "size": 4122530166,
+      "checksum": "adler32:c7784c50",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_25.root"
+    },
+    {
+      "filename": "nano_data2016_26.root",
+      "size": 3674247280,
+      "checksum": "adler32:79a250ac",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_26.root"
+    },
+    {
+      "filename": "nano_data2016_27.root",
+      "size": 3613827557,
+      "checksum": "adler32:15c38665",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_27.root"
+    },
+    {
+      "filename": "nano_data2016_28.root",
+      "size": 4910924775,
+      "checksum": "adler32:ba137811",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_28.root"
+    },
+    {
+      "filename": "nano_data2016_1-4.root",
+      "size": 775705011,
+      "checksum": "adler32:94fb8ba4",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-4.root"
+    },
+    {
+      "filename": "nano_data2016_29.root",
+      "size": 3521099436,
+      "checksum": "adler32:f4bc3370",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_29.root"
+    },
+    {
+      "filename": "nano_data2016_3.root",
+      "size": 2989748569,
+      "checksum": "adler32:c004df43",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_3.root"
+    },
+    {
+      "filename": "nano_data2016_30.root",
+      "size": 3904182395,
+      "checksum": "adler32:912fed90",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_30.root"
+    },
+    {
+      "filename": "nano_data2016_31.root",
+      "size": 4243966698,
+      "checksum": "adler32:2d88098a",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_31.root"
+    },
+    {
+      "filename": "nano_data2016_32.root",
+      "size": 4002706442,
+      "checksum": "adler32:ab13c0df",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_32.root"
+    },
+    {
+      "filename": "nano_data2016_33.root",
+      "size": 4573063211,
+      "checksum": "adler32:64a82d9e",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_33.root"
+    },
+    {
+      "filename": "nano_data2016_34.root",
+      "size": 4208271878,
+      "checksum": "adler32:4a5cd397",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_34.root"
+    },
+    {
+      "filename": "nano_data2016_35.root",
+      "size": 3608291663,
+      "checksum": "adler32:96fd08ff",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_35.root"
+    },
+    {
+      "filename": "nano_data2016_36.root",
+      "size": 3994149574,
+      "checksum": "adler32:c88e0618",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_36.root"
+    },
+    {
+      "filename": "nano_data2016_37.root",
+      "size": 4467999246,
+      "checksum": "adler32:81bab53a",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_37.root"
+    },
+    {
+      "filename": "nano_data2016_1-5.root",
+      "size": 1060268108,
+      "checksum": "adler32:4c804e91",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-5.root"
+    },
+    {
+      "filename": "nano_data2016_38.root",
+      "size": 4179456705,
+      "checksum": "adler32:de33c734",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_38.root"
+    },
+    {
+      "filename": "nano_data2016_39.root",
+      "size": 4349552511,
+      "checksum": "adler32:5c59e6c7",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_39.root"
+    },
+    {
+      "filename": "nano_data2016_4.root",
+      "size": 3846348599,
+      "checksum": "adler32:3a55d13a",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_4.root"
+    },
+    {
+      "filename": "nano_data2016_40.root",
+      "size": 4381778904,
+      "checksum": "adler32:5bd2c886",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_40.root"
+    },
+    {
+      "filename": "nano_data2016_41.root",
+      "size": 1314295265,
+      "checksum": "adler32:f7819c81",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_41.root"
+    },
+    {
+      "filename": "nano_data2016_42.root",
+      "size": 123124864,
+      "checksum": "adler32:1dfb8451",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_42.root"
+    },
+    {
+      "filename": "nano_data2016_43.root",
+      "size": 4653509785,
+      "checksum": "adler32:916aea0e",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_43.root"
+    },
+    {
+      "filename": "nano_data2016_44.root",
+      "size": 5170727023,
+      "checksum": "adler32:e98ee24b",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_44.root"
+    },
+    {
+      "filename": "nano_data2016_45.root",
+      "size": 132190008,
+      "checksum": "adler32:f0f4e05c",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_45.root"
+    },
+    {
+      "filename": "nano_data2016_46.root",
+      "size": 3734312645,
+      "checksum": "adler32:210b5e97",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_46.root"
+    },
+    {
+      "filename": "nano_data2016_1-6.root",
+      "size": 1055555838,
+      "checksum": "adler32:6810862d",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-6.root"
+    },
+    {
+      "filename": "nano_data2016_47.root",
+      "size": 3541315804,
+      "checksum": "adler32:752dd54c",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_47.root"
+    },
+    {
+      "filename": "nano_data2016_48.root",
+      "size": 3654556039,
+      "checksum": "adler32:d3295078",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_48.root"
+    },
+    {
+      "filename": "nano_data2016_49.root",
+      "size": 1534092399,
+      "checksum": "adler32:975894b1",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_49.root"
+    },
+    {
+      "filename": "nano_data2016_5.root",
+      "size": 3040586612,
+      "checksum": "adler32:151d2a86",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_5.root"
+    },
+    {
+      "filename": "nano_data2016_50.root",
+      "size": 3547529354,
+      "checksum": "adler32:01cfd36e",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_50.root"
+    },
+    {
+      "filename": "nano_data2016_51.root",
+      "size": 2752216246,
+      "checksum": "adler32:98b8341a",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_51.root"
+    },
+    {
+      "filename": "nano_data2016_53.root",
+      "size": 4442389206,
+      "checksum": "adler32:c67cf40e",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_53.root"
+    },
+    {
+      "filename": "nano_data2016_54.root",
+      "size": 4434657676,
+      "checksum": "adler32:10a648c7",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_54.root"
+    },
+    {
+      "filename": "nano_data2016_55.root",
+      "size": 4446598255,
+      "checksum": "adler32:be61b1ec",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_55.root"
+    },
+    {
+      "filename": "nano_data2016_56.root",
+      "size": 2286559120,
+      "checksum": "adler32:ae63209e",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_56.root"
+    },
+    {
+      "filename": "nano_data2016_1-7.root",
+      "size": 1287288248,
+      "checksum": "adler32:92b6ed71",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-7.root"
+    },
+    {
+      "filename": "nano_data2016_57.root",
+      "size": 4213914848,
+      "checksum": "adler32:343d6dd3",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_57.root"
+    },
+    {
+      "filename": "nano_data2016_58.root",
+      "size": 4158901664,
+      "checksum": "adler32:10400ca2",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_58.root"
+    },
+    {
+      "filename": "nano_data2016_59.root",
+      "size": 3137705670,
+      "checksum": "adler32:2c94c694",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_59.root"
+    },
+    {
+      "filename": "nano_data2016_6.root",
+      "size": 4112110868,
+      "checksum": "adler32:e5327218",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_6.root"
+    },
+    {
+      "filename": "nano_data2016_7.root",
+      "size": 4003072605,
+      "checksum": "adler32:9d6a5a70",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_7.root"
+    },
+    {
+      "filename": "nano_data2016_8.root",
+      "size": 3988725012,
+      "checksum": "adler32:1f7b88fd",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_8.root"
+    },
+    {
+      "filename": "nano_data2016_9.root",
+      "size": 4583918816,
+      "checksum": "adler32:afa39e77",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_9.root"
+    },
+    {
+      "filename": "nano_data2016_1-8.root",
+      "size": 1499611489,
+      "checksum": "adler32:13c39bac",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-8.root"
+    },
+    {
+      "filename": "nano_data2016_1-9.root",
+      "size": 277616305,
+      "checksum": "adler32:bfd52821",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-9.root"
+    },
+    {
+      "filename": "nano_data2016_1.root",
+      "size": 3416301494,
+      "checksum": "adler32:ec4a8edd",
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1.root"
+    }
+  ]
+}

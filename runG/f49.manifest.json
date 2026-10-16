@@ -1,0 +1,42 @@
+{
+  "extractor": "P v1: leading jet (max pT, |eta|<2.5, pT>50) -> phi -> 2^b uniform bins, MSB-first",
+  "params": {
+    "files": "uris-xrd-f49.txt",
+    "mc": null,
+    "out": "runG/f49",
+    "b": 8,
+    "pt_min": 20.0,
+    "eta_max": 2.5,
+    "batch": "200 MB",
+    "max_events": 0,
+    "require_jetid": false,
+    "alpha": 1e-06
+  },
+  "files": [
+    {
+      "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_45.root"
+    }
+  ],
+  "events_with_bits": 2925,
+  "bins": 256,
+  "bin_width_mrad": 24.544,
+  "wall_time_s": 8.86,
+  "results": {
+    "chi2": 275.56888888888886,
+    "chi2_df": 255,
+    "chi2_p": 0.17963933108444508,
+    "ks_stat": 0.017011720655565332,
+    "ks_p": 0.3616112762060836,
+    "max_bin_count": 23,
+    "p_max_upper_CP_bonferroni": 0.02164501179003703,
+    "min_entropy_bits_per_event": 5.529821603388314,
+    "total_bits": 23400,
+    "total_min_entropy_bits_lower_bound": 16174.728189910817
+  },
+  "outputs": {
+    "bits_file": "runG/f49.bits.bin",
+    "bits_sha256": "d1bf64d2b48e1203c244b8759ab1245899171e72da3e5365cdaa3b65b52b5f36"
+  },
+  "code_sha256": "f8622c7023c361a398f5a293448a2f311d44cca55b39191cf0638c64312529a1",
+  "timestamp_utc": "2026-10-15T19:06:21Z"
+}
