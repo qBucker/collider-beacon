@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # xrd_provenance.py — f01 provenance: local immutable copy vs portal metadata,
 # plus the remote-read vs local-rerun determinism gate (bit-stream identity).
-# Run AFTER: xrd_fetch.py (copy done) and the local rerun manifest exists.
+# Run AFTER: xrd_fetch_resume.py (copy done) and the local rerun manifest exists.
 import hashlib, json, os, zlib
 
 PORTAL = {

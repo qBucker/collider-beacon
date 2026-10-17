@@ -82,6 +82,8 @@ established during commissioning:
   prewarm of the ROOT library directory is required (command in the script header).
 - XRootD: URIs require the `root://host//eos/...` form (double slash); XRootD 6.x
   pybind11 rejects numpy integer types — the adapter `xrd_compat.py` handles this.
+  Direct `XRootD.client.File.read()` calls were observed to hang in this environment;
+  reads go through the fsspec-xrootd layer, the same path used by uproot.
 - uproot >= 5.7: classic TTree output requires `wf.mktree(name, {col: "var * float32"})`
   followed by `.extend()`; plain dict assignment produces an RNTuple.
 
