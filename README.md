@@ -17,7 +17,7 @@ CMS Open Data to audited random bits, including a bit-identical dual implementat
 - Systematic effect: localized acceptance deficit of −10.5% (bins 227–234,
   phi ≈ +139°..+150°), stable across all 67 files and terciles, unchanged under
   tight-jetId selection. The entropy bound absorbs this effect conservatively;
-  details are reported in the companion paper.
+  details are reported in the paper.
 - Cross-detector check (2026-10-17): ATLAS Open Data record 93933 (Run 2 2015+2016,
   no skim, CC0-1.0), 16 files, n = 597,965 events, same extractor and binning. The
   CMS −10.5% band does not reproduce: ATLAS local band ratio 1.0024 ± 0.0072; the CMS
@@ -114,6 +114,6 @@ Input data: CMS Open Data (CC0-1.0). Large input files are not stored in this re
 
 ## License
 
-MIT (see `LICENSE`). Companion repository:
+MIT (see `LICENSE`). Related repository:
 [vmc-rsep-xmss](https://github.com/qBucker/vmc-rsep-xmss) (monotone accountability / VMC).
 
