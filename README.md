@@ -18,6 +18,12 @@ CMS Open Data to audited random bits, including a bit-identical dual implementat
   phi ≈ +139°..+150°), stable across all 67 files and terciles, unchanged under
   tight-jetId selection. The entropy bound absorbs this effect conservatively;
   details are reported in the companion paper.
+- Cross-detector check (2026-10-17): ATLAS Open Data record 93933 (Run 2 2015+2016,
+  no skim, CC0-1.0), 16 files, n = 597,965 events, same extractor and binning. The
+  CMS −10.5% band does not reproduce: ATLAS local band ratio 1.0024 ± 0.0072; the CMS
+  value is excluded at 14.1σ (pooled, conservative estimator comparison). The ATLAS
+  sample carries a broad +2.4% acceptance modulation instead. Details:
+  `atlas/RESULTS-2026-10-17.md`.
 
 ## Repository layout
 
@@ -35,6 +41,9 @@ CMS Open Data to audited random bits, including a bit-identical dual implementat
   checksums, aggregates, round-2 sample, R3 re-verification and twin battery outputs.
 - `mc/` — Pythia8 command cards and prediction-side evidence; large `.root` files are
   excluded and are regenerated from the cards.
+- `atlas/` — cross-detector check on ATLAS Open Data: adapter, parallel-range HTTP source
+  (EOS 307 redirect + 16 connections), sample URL lists, result manifest and bits.
+- `predictions/` — pre-registered prediction cards, committed before official runs.
 
 ## Reproduction procedure
 

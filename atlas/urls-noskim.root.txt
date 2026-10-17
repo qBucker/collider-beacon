@@ -1,0 +1,16 @@
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data15_periodD.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data15_periodE.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data15_periodF.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data15_periodG.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data15_periodH.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data15_periodJ.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodA.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodB.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodC.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodD.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodE.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodF.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodG.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodI.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodK.noskim.root
+root://eospublic.cern.ch:1094//eos/opendata/atlas/rucio/user/egramsta/data16_periodL.noskim.root

@@ -1,0 +1,16 @@
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodD.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodE.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodF.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodG.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodH.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodJ.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodA.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodB.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodC.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodD.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodE.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodF.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodG.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodI.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodK.noskim.root
+simplecache::https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodL.noskim.root
