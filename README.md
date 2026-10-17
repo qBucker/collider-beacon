@@ -5,6 +5,10 @@ symmetry and quantum measurement. Phase 0 covers the complete processing chain f
 CMS Open Data to audited random bits, including a bit-identical dual implementation
 (Python and C++/ROOT) and a complete evidence record.
 
+## Citation
+
+J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quantum Measurement*, Zenodo preprint (2026). Version DOI [10.5281/zenodo.23434446](https://doi.org/10.5281/zenodo.23434446); concept DOI [10.5281/zenodo.23434445](https://doi.org/10.5281/zenodo.23434445).
+
 ## Measured results (2026-10-16)
 
 - Input: CMS ZeroBias Run2016G NanoAOD open data (CC0-1.0); 67/67 files; remote read via XRootD.
