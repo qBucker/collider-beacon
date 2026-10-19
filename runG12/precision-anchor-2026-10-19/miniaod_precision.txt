@@ -1,0 +1,6 @@
+file: root://eospublic.cern.ch//eos/opendata/cms/Run2016G/ZeroBias/MINIAOD/UL2016_MiniAODv2-v1/50000/00C7CA02-901E-B142-BAB9-5366EEA099E4.root
+component        n min_tz median
+Pt           21950      0      1
+Phi          21950      0      0
+Eta          21950      0      0
+M            21950      0      0

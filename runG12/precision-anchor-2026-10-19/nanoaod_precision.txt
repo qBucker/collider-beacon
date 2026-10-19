@@ -1,0 +1,12 @@
+file: /home/shuix/projects/deepseekharness/beacon-paper/phase0/data/nano_data2016_1-1.root
+file compression settings: 209
+branch                 n min_tz median share>=11 share>=13
+Jet_phi             8322     11     11     1.000     0.238
+Jet_pt              8322     13     14     1.000     1.000
+Jet_eta             8322     11     11     1.000     0.245
+Jet_mass            8322     13     14     1.000     1.000
+MET_pt              8000      0      1     0.000     0.000
+MET_phi             8000     11     12     1.000     0.253
+Electron_phi         254     11     12     1.000     0.252
+Muon_phi             330     11     11     1.000     0.252
+Photon_phi           104     11     12     1.000     0.288

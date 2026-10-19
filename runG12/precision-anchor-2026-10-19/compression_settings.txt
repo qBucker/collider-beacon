@@ -1,0 +1,13 @@
+Processing runG12/precision-anchor-2026-10-19/check_compression_settings.C("/home/shuix/projects/deepseekharness/beacon-paper/phase0/data/nano_data2016_1-1.root")...
+Warning in <TClass::Init>: no dictionary for class edm::Hash<1> is available
+Warning in <TClass::Init>: no dictionary for class edm::ParameterSetBlob is available
+Warning in <TClass::Init>: no dictionary for class edm::ProcessHistory is available
+Warning in <TClass::Init>: no dictionary for class edm::ProcessConfiguration is available
+Warning in <TClass::Init>: no dictionary for class pair<edm::Hash<1>,edm::ParameterSetBlob> is available
+file settings=209
+Jet_phi: branch settings=209
+Jet_pt: branch settings=209
+Jet_eta: branch settings=209
+Jet_mass: branch settings=209
+MET_pt: branch settings=209
+MET_phi: branch settings=209
