@@ -34,6 +34,13 @@
 
 ## Post-hoc notes (append only after the run)
 
-- Result manifest: `runG12/` (per-file manifests; aggregate at `runG12/aggregate-b12-*.txt`)
-- Commit: (to be appended)
-- Outcome versus prediction: (to be appended)
+- Result manifest: `runG12/` (67 per-file manifests and bit files); aggregate at `runG12/aggregate-b12-2026-10-19.txt`.
+- Commit: `61b1518` (prediction card and pipeline); result commit: this commit.
+- Outcome versus prediction:
+  1. **Pooled h_min = 11.3098 bits/event** (N = 5,211,740 decoded events; max bin 1,777). Gate ≥ 10.0: **PASS** (margin 1.31 bits). The value lies inside the decision band [11.0, 12.0] but **below the point-prediction interval [11.50, 11.65]**; the flat-within-bin central value is not met.
+  2. **Cause of the shortfall (post-hoc diagnostic).** The CMS PFNanoAOD files store jet four-vectors with reduced mantissa precision: `Jet_phi` carries 12 explicit mantissa bits (13 significant bits; minimum 11 trailing zeros, steps 2^-11..2^-13 rad depending on |φ|), and `Jet_pt` carries 10. At b = 12 the bin width is 1.534 mrad. For |φ| ∈ [2, 4) the ratio of bin width to storage step is exactly π (1.534 mrad / 0.488 mrad), so the fractional part 0.1416 produces an occupancy beat with period ≈ 7.06 bins. The pooled counts show exactly this comb: FFT peak at 581 cycles per circle (period 7.05 bins), lag-7 autocorrelation 0.836, and all top fine bins fall in |φ| ∈ [2, 4) (φ ≈ ±172°..±178°, +120°, −148°). The shortfall is a **storage-precision floor of the public data product**, not fine physical structure. The truncation pattern is consistent with lossy float compression; the exact production setting is not recorded in the file.
+  3. **Scope.** 11.31 bits/event is a lower bound supported by the public files. Increasing b beyond 12 cannot exceed the file's numeric-precision floor; claims are scoped to the data product, not to detector physics.
+  4. **Seam band** (bins 3632–3759): ratio **0.8947** versus predicted 0.895 ± 0.01 → PASS. The b=8 seam persists unchanged at 16× finer binning; it is not a binning artifact.
+  5. **Per-file diagnostics:** χ² gate (p > 1e−6) 17/67 pass, 50 fail (round 1: 44/67 pass); KS 67/67 pass. The higher χ² failure rate is consistent with the resolved quantization structure.
+  6. **Recheck:** 31 files have one truncated final symbol (odd event count); 0 mismatches; max |Δh| = 4.9e−4 bits. Decoded N is 31 events below the manifest total.
+- **Transport note:** f57, f64 and f67 hit the runner's 900 s timeout in the main pass and were rerun with a 2400 s timeout; all completed. Sample, selection and analysis choices are unchanged.

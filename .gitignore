@@ -6,3 +6,4 @@ tools/
 twin/twin_bin
 mc/gen*.log
 xrd-batch*.log
+runG12-local/
