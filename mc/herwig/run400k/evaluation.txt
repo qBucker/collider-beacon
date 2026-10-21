@@ -1,0 +1,11 @@
+generated            : 400000
+selected events n    : 5791
+acceptance           : 1.448%   (card: [0.9, 1.7]%)
+chi2 p               : 0.868879   (gate p > 1e-6)
+KS p                 : 0.54563   (gate p > 1e-6)
+h_min                : 6.0972 bits   (card: [5.5, 6.5])
+max bin              : 37
+seam band ratio      : 1.0177 +- 0.0790   (card: 1.00 +- 0.20)
+  band counts 187 over 8 bins; sideband 1470 over 64 bins
+uniform null at n=5791: h_min 5-50-95% = 6.002 / 6.097 / 6.174 bits
+PYTHIA reference     : n=5430, seam band ratio 0.9357 +- 0.0777

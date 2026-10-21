@@ -1,0 +1,63 @@
+# -*- ThePEG-repository -*-
+# Herwig++ 2.7.1 minimum-bias input for the Phase 0 prediction side.
+#
+# Derived from <herwig-install>/share/Herwig++/LHC-MB.in, the shipped
+# 7 TeV minimum-bias tune (Gieseke-Kirchgaesser-Loshaj soft-interaction
+# model), with three changes:
+#   1. beam energy set to 13 TeV (the shipped file sets 8 TeV);
+#      all tune parameters are kept at their shipped values;
+#   2. a fixed random seed is set for reproducibility;
+#   3. a HepMCFile analysis handler is added to write HepMC (GenEvent)
+#      output for Delphes.
+# The event count is supplied on the command line (-N).
+
+cd /Herwig/Generators
+set LHCGenerator:NumberOfEvents 10000000
+set LHCGenerator:RandomNumberGenerator:Seed 20261021
+set LHCGenerator:PrintEvent 10000
+set LHCGenerator:MaxErrors 1000000
+
+set LHCGenerator:DebugLevel 0
+set LHCGenerator:DumpPeriod -1
+set LHCGenerator:DebugEvent 0
+
+##################################################
+# LHC physics parameters
+##################################################
+set LHCGenerator:EventHandler:LuminosityFunction:Energy 13000.0
+
+# Intrinsic pT tune extrapolated to LHC energy
+set /Herwig/Shower/Evolver:IntrinsicPtGaussian 2.2*GeV
+
+##################################################
+# Matrix elements for hadron-hadron collisions
+##################################################
+cd /Herwig/MatrixElements/
+insert SimpleQCD:MatrixElements[0] MEMinBias
+
+# Need this cut only for min bias
+cd /Herwig/Cuts
+set JetKtCut:MinKT 0.0*GeV
+set QCDCuts:MHatMin 0.0*GeV
+set QCDCuts:X1Min 0.055
+set QCDCuts:X2Min 0.055
+
+# MPI model settings
+set /Herwig/UnderlyingEvent/MPIHandler:IdenticalToUE 0
+
+##################################################
+# HepMC output for Delphes
+##################################################
+cd /Herwig/Generators
+insert LHCGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMCFile
+# PrintEvent is the number of leading events written to the file; set it
+# well above the requested -N so that every generated event is written.
+set /Herwig/Analysis/HepMCFile:PrintEvent 100000000
+set /Herwig/Analysis/HepMCFile:Format GenEvent
+set /Herwig/Analysis/HepMCFile:Units GeV_mm
+set /Herwig/Analysis/HepMCFile:Filename herwig_minbias.hepmc
+
+##################################################
+# Save run
+##################################################
+saverun LHC-MB-13TeV LHCGenerator

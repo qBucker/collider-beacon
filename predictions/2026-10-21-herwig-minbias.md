@@ -35,5 +35,24 @@
 
 ## Post-hoc notes (append only after the run)
 
-- Result manifest:
+- Result manifest: `mc/herwig/run400k/mc_hpp_400k.manifest.json` (sha256
+  `56bfef1bd37ffc7264cfab9dd03709377c9d203939f3c93bf89700518ebf44b6`); bits
+  `mc_hpp_400k.bits.bin` (sha256 `b915ef7e6a98572c7e46362121a1c892962dcdb5cd91d64e7a1419e560cb4ae3`).
+  Merged Delphes file sha256 `070a5a0d18b54da0f6f3cfe2be32c939ac494723c3a26f19eb66173ea5b2de53`
+  (9.6 GB, kept locally, not committed).
 - Outcome versus prediction:
+  1. **Acceptance 1.448%** (5,791/400,000) — inside [0.9%, 1.7%].
+  2. **chi-square p = 0.869, KS p = 0.546** — both gates pass; no structure beyond
+     finite-sample fluctuations.
+  3. **h_min = 6.0972 bits** — inside [5.5, 6.5]; the uniform-sample null at n = 5,791 has
+     median 6.097 (5-95%: 6.002-6.174), so the measurement sits at the null median.
+  4. **Seam-band ratio 1.0177 +- 0.0790** — inside 1.00 +- 0.20; the PYTHIA reference at
+     n = 5,430 gives 0.9357 +- 0.0777. Both are consistent with the phi-symmetric Delphes
+     response.
+  5. **Gate pattern as predicted** — chi-square/KS pass; h_min is below 10 bits by
+     construction at b = 8 and this n.
+- No outcome falls outside the stated intervals. The cell is reported consistent with the
+  uniformity prediction; the prediction side is generator-independent within the measured
+  precision.
+- Seeds 20261101-20261108 (8 x 50,000); generator 198.7 s per chunk, Delphes 85.5 s per
+  chunk, merge 21 s, extraction 60 s. Evidence: `mc/herwig/run400k/`.
