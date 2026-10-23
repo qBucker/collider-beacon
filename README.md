@@ -41,6 +41,9 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   b=12 configuration (25,000 events per block, 58 one-megabit sequences): zero NIST
   STS flags for three independent seed salts; b=8 control also zero. The raw b=12
   stream has six flags. Details: `conditioning/RESULT-2026-10-23.md`.
+- Two-stage commitment (2026-10-23): `C_plan = 0b8ff375…` fixes the b=12 plan before
+  recording; `C_data = 857c293c…` binds the 67-file portal identity after recording;
+  `verify` passes and tamper tests fail. Details: `protocol/README.md`.
 
 ## Repository layout
 
@@ -68,6 +71,8 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
 - `conditioning/` — Stage-2 Toeplitz extraction with a chained public seed, the
   block-size/seed scan, and the NIST STS reports for the conditioned b = 12 and
   b = 8 streams.
+- `protocol/` — two-stage commitment tool (`C_plan` before recording, `H_RAW`/
+  `C_data` after), canonical encoding, Phase 0 example records, and verification.
 
 ## Reproduction procedure
 
