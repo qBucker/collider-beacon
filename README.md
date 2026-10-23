@@ -36,6 +36,11 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   5% quantile 8.43); 67/67 files below 10. The ≥ 10-bit/event gate is a pooled-run
   statement (n ≈ 5.2M), not a per-file one. Details:
   `diagnostics/b12-perfile-2026-10-23.txt`.
+- Stage-2 conditioning (2026-10-23): block-wise Toeplitz extraction over GF(2) with
+  a SHAKE256 chained public seed and a 128-bit leftover-hash margin. Canonical
+  b=12 configuration (25,000 events per block, 58 one-megabit sequences): zero NIST
+  STS flags for three independent seed salts; b=8 control also zero. The raw b=12
+  stream has six flags. Details: `conditioning/RESULT-2026-10-23.md`.
 
 ## Repository layout
 
@@ -60,6 +65,9 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   (lag-k mutual information, per-file certified h_min against the same-n uniform null,
   block-wise MCV), the ATLAS consecutive-block stability check, and the b = 12 per-file
   certification distribution, with result files and checksums.
+- `conditioning/` — Stage-2 Toeplitz extraction with a chained public seed, the
+  block-size/seed scan, and the NIST STS reports for the conditioned b = 12 and
+  b = 8 streams.
 
 ## Reproduction procedure
 
