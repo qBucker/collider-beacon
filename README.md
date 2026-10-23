@@ -32,6 +32,10 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   0.0090 bits, identical to the shuffled-series floor; 3/67 per-file certified h_min
   outside the 2.5–97.5% uniform-null band, all below by 0.003–0.015 bit; block-wise MCV
   matches the uniform null. Details: `diagnostics/dependence-2026-10-23.txt`.
+- b=12 per-file certification (2026-10-23): 6.10–10.00 bits per file (median 9.78,
+  5% quantile 8.43); 67/67 files below 10. The ≥ 10-bit/event gate is a pooled-run
+  statement (n ≈ 5.2M), not a per-file one. Details:
+  `diagnostics/b12-perfile-2026-10-23.txt`.
 
 ## Repository layout
 
@@ -54,7 +58,8 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
 - `predictions/` — pre-registered prediction cards, committed before official runs.
 - `diagnostics/` — symbol-level dependence and stationarity audit of the b = 8 run
   (lag-k mutual information, per-file certified h_min against the same-n uniform null,
-  block-wise MCV), with its result file and checksums.
+  block-wise MCV), the ATLAS consecutive-block stability check, and the b = 12 per-file
+  certification distribution, with result files and checksums.
 
 ## Reproduction procedure
 
