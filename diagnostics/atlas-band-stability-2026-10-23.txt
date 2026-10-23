@@ -1,0 +1,15 @@
+ATLAS band-ratio stability (consecutive blocks)
+input: atlas/smoke2.bits.bin, n=597965, B=256
+block    n      band ratio
+    0   59796  1.0026
+    1   59797  1.0101
+    2   59796  1.0323
+    3   59797  1.0073
+    4   59796  1.0098
+    5   59797  0.9629
+    6   59796  0.9833
+    7   59797  1.0070
+    8   59796  1.0004
+    9   59797  1.0463
+first half  298982  1.0125
+second half 298983  1.0004
