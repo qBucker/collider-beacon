@@ -1,0 +1,27 @@
+Symbol-level dependence and stationarity diagnostics
+input: 67 files, 5211771 symbols, B=256, alpha=1e-6 (Bonferroni over B)
+seed: 20261023
+
+1. lag-k mutual information (pooled)
+   k     MI(bits)     chi2        p
+   1   0.009056   65330.4   0.1984
+   2   0.009080   65441.3   0.1243
+   3   0.009067   65384.5   0.1594
+   4   0.009005   64934.1   0.5988
+   8   0.009092   65543.0   0.0757
+  16   0.009018   64990.5   0.5374
+   shuffled lag-1 MI: mean 0.009028, range 0.008962-0.009077
+
+2. per-file certified h_min against the uniform null at the same n
+   outside: f16 n=91956 h=7.3383 null=[7.3528, 7.4402]
+   outside: f42 n=96856 h=7.3511 null=[7.3650, 7.4542]
+   outside: f52 n=85381 h=7.3240 null=[7.3270, 7.4200]
+   outside 2.5-97.5% band: 3/67
+   per-file h_min: min 5.3468, median 7.3668, max 7.4484
+
+3. block-wise MCV (raw, no certification) against the uniform null
+   L=  1000 blocks=5176 data median 6.644 [5-95 6.265-6.796] null median 6.644 [5-95 6.265-6.796]
+   L=  5000 blocks=1006 data median 7.243 [5-95 7.078-7.381] null median 7.243 [5-95 7.078-7.381]
+   L= 10000 blocks= 487 data median 7.430 [5-95 7.288-7.533] null median 7.430 [5-95 7.310-7.533]
+   L= 50000 blocks=  68 data median 7.715 [5-95 7.650-7.749] null median 7.733 [5-95 7.661-7.777]
+

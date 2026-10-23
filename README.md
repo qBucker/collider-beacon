@@ -28,6 +28,10 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   value is excluded at 14.1σ (pooled, conservative estimator comparison). The ATLAS
   sample carries a broad +2.4% acceptance modulation instead. Details:
   `atlas/RESULTS-2026-10-17.md`.
+- Symbol-level dependence and stationarity audit (2026-10-23): lag-k mutual information
+  0.0090 bits, identical to the shuffled-series floor; 3/67 per-file certified h_min
+  outside the 2.5–97.5% uniform-null band, all below by 0.003–0.015 bit; block-wise MCV
+  matches the uniform null. Details: `diagnostics/dependence-2026-10-23.txt`.
 
 ## Repository layout
 
@@ -48,6 +52,9 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
 - `atlas/` — cross-detector check on ATLAS Open Data: adapter, parallel-range HTTP source
   (EOS 307 redirect + 16 connections), sample URL lists, result manifest and bits.
 - `predictions/` — pre-registered prediction cards, committed before official runs.
+- `diagnostics/` — symbol-level dependence and stationarity audit of the b = 8 run
+  (lag-k mutual information, per-file certified h_min against the same-n uniform null,
+  block-wise MCV), with its result file and checksums.
 
 ## Reproduction procedure
 
