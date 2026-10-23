@@ -1,0 +1,21 @@
+{
+ "scale": 1.05,
+ "channels": {
+  "$Z\\to\\mu\\mu$": {
+   "n": 1253,
+   "nominal_peak": 90.81525,
+   "nominal_sigma68": 3.312915580000002,
+   "tampered_peak": 95.3430615,
+   "shift_gev": 4.5278114999999985,
+   "shift_sigma_mean": 38.61023397257139
+  },
+  "$H\\to\\gamma\\gamma$": {
+   "n": 168,
+   "nominal_peak": 124.236396,
+   "nominal_sigma68": 0.2486699400000063,
+   "tampered_peak": 130.439628,
+   "shift_gev": 6.203232,
+   "shift_sigma_mean": 258.0466969130703
+  }
+ }
+}

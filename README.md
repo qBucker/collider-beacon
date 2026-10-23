@@ -44,6 +44,10 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
 - Two-stage commitment (2026-10-23): `C_plan = 0b8ff375…` fixes the b=12 plan before
   recording; `C_data = 857c293c…` binds the 67-file portal identity after recording;
   `verify` passes and tamper tests fail. Details: `protocol/README.md`.
+- Geant4 audit (2026-10-23): simplified full simulation (six Si layers + PbWO4
+  calorimeter); Z→μμ peak 90.82 GeV (σ68 3.31), H→γγ 124.2 GeV (σ68 0.24 in the
+  100-event validation); a 5% calibration drift shifts the peaks by 4.53/6.21 GeV
+  at 38.6σ/130σ. Details: `audit/README.md`.
 
 ## Repository layout
 
@@ -73,6 +77,9 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   b = 8 streams.
 - `protocol/` — two-stage commitment tool (`C_plan` before recording, `H_RAW`/
   `C_data` after), canonical encoding, Phase 0 example records, and verification.
+- `audit/` — Geant4 full-simulation audit demonstration: simplified tracker and
+  PbWO4 calorimeter, Z→μμ and H→γγ mass reconstruction, and a 5% calibration
+  drift test.
 
 ## Reproduction procedure
 

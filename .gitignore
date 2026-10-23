@@ -8,3 +8,5 @@ mc/gen*.log
 xrd-batch*.log
 runG12-local/
 conditioning/out/*.bits.bin
+audit/out/*hits*.csv
+audit/build/
