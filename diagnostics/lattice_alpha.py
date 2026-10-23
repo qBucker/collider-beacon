@@ -9,12 +9,15 @@ lattice_extract.py and compares:
   C  empirical alphabet: |phi| bit patterns (the lattice-aligned construction)
   S  synthetic truth: 5.211e6 uniform |phi| quantized to the same 12-bit lattice
 
-The CP bound uses the Clopper-Pearson upper limit with Bonferroni over the
-alphabet size, alpha = 1e-6.
+The empirical-alphabet CP bound uses a fixed reference alphabet B_ref (the
+synthetic B_eff) so that a smaller real-data B_eff cannot inflate the result.
+The two-stage arm uses a seeded random interleave (not a sequential split).
 
 Usage:
   python3 diagnostics/lattice_alpha.py --lattice-dir latticeG \
       --out diagnostics/lattice-alpha.json --fig diagnostics/lattice-alpha.png
+  python3 diagnostics/lattice_alpha.py --synthetic-only --synthetic-seeds 10 \
+      --out /tmp/synthetic-calibration.json
 """
 
 import argparse
@@ -27,14 +30,17 @@ import numpy as np
 from scipy.stats import beta
 
 ALPHA = 1e-6
-Z = 5.8
+B_REF = 43363
+SPLIT_SEED = 20261023
 
 
-def cp_h(counts, n, alpha=ALPHA):
+def cp_h(counts, n, alpha=ALPHA, B=None):
     k = int(counts.max())
     if k >= n:
         return 0.0, k, n
-    p_hi = beta.ppf(1.0 - alpha / len(counts), k + 1, n - k)
+    if B is None:
+        B = len(counts)
+    p_hi = beta.ppf(1.0 - alpha / B, k + 1, n - k)
     return -math.log2(p_hi), k, n
 
 
@@ -51,11 +57,17 @@ def empirical_abs(phi):
     return np.unique(u, return_counts=True)
 
 
-def two_stage_h(vals, alpha=ALPHA):
-    """Split-half: select the mode on the first half, certify on the second."""
+def two_stage_h(vals, alpha=ALPHA, split_seed=SPLIT_SEED):
+    """Split-half with a seeded random interleave.
+
+    A sequential split would confound the estimate with time-dependent
+    luminosity/acceptance; the permutation makes the halves exchangeable.
+    """
     n = len(vals)
     n1 = n // 2
-    a, b = vals[:n1], vals[n1:]
+    perm = np.random.default_rng(split_seed).permutation(n)
+    a = vals[perm[:n1]]
+    b = vals[perm[n1:]]
     uniq, counts = np.unique(a, return_counts=True)
     mode = uniq[int(np.argmax(counts))]
     k = int((b == mode).sum())
@@ -89,14 +101,63 @@ def fingerprint(counts):
     return {"fft_peak_cycles_per_circle": peak, "lag7_autocorr": lag7}
 
 
+def synthetic_arm(n, seed, b_ref, split_seed=SPLIT_SEED):
+    rng = np.random.default_rng(seed)
+    x = rng.uniform(0.0, math.pi, n)
+    q = quantize_lattice(x)
+    uq, cq = np.unique(np.ascontiguousarray(q).view(np.uint32), return_counts=True)
+    h1, k1, _ = cp_h(cq, len(q), B=b_ref)
+    qb = np.ascontiguousarray(q).view(np.uint32)
+    h2, k2, n2, mode2 = two_stage_h(qb, split_seed=split_seed)
+    return {
+        "seed": int(seed),
+        "S1_h_inf": h1,
+        "S1_B_eff": int(len(uq)),
+        "S1_max_count": k1,
+        "S2_h_inf": h2,
+        "S2_certify_count": k2,
+        "S2_n_certify": int(n2),
+        "S2_selected_phi": float(np.array([mode2], dtype=np.uint32).view(np.float32)[0]),
+    }
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--lattice-dir", required=True)
+    ap.add_argument("--lattice-dir", default="latticeG")
     ap.add_argument("--out", required=True)
-    ap.add_argument("--fig", required=True)
+    ap.add_argument("--fig")
     ap.add_argument("--synthetic-events", type=int, default=5211771)
     ap.add_argument("--seed", type=int, default=20261023)
+    ap.add_argument("--synthetic-seeds", type=int, default=10)
+    ap.add_argument("--B-ref", type=int, default=B_REF)
+    ap.add_argument("--split-seed", type=int, default=SPLIT_SEED)
+    ap.add_argument("--synthetic-only", action="store_true")
     args = ap.parse_args()
+
+    seeds = [synthetic_arm(args.synthetic_events, args.seed + i, args.B_ref,
+                           args.split_seed)
+             for i in range(args.synthetic_seeds)]
+    s1 = np.array([s["S1_h_inf"] for s in seeds])
+    s2 = np.array([s["S2_h_inf"] for s in seeds])
+    bands = {
+        "B_ref": int(args.B_ref),
+        "split_seed": int(args.split_seed),
+        "n_seeds": int(args.synthetic_seeds),
+        "S1_mean": float(s1.mean()),
+        "S1_std": float(s1.std(ddof=1)),
+        "S1_band_2sigma": [float(s1.mean() - 2 * s1.std(ddof=1)),
+                           float(s1.mean() + 2 * s1.std(ddof=1))],
+        "S2_mean": float(s2.mean()),
+        "S2_std": float(s2.std(ddof=1)),
+        "S2_band_2sigma": [float(s2.mean() - 2 * s2.std(ddof=1)),
+                           float(s2.mean() + 2 * s2.std(ddof=1))],
+        "seeds": seeds,
+    }
+
+    if args.synthetic_only:
+        json.dump(bands, open(args.out, "w"), indent=1)
+        print(json.dumps(bands, indent=1))
+        return
 
     files = sorted(glob.glob(os.path.join(args.lattice_dir, "f[0-9][0-9].lattice.bin")))
     if not files:
@@ -105,7 +166,8 @@ def main():
     phi = vals.view(np.float32)
     n = len(phi)
 
-    res = {"files": [os.path.basename(f) for f in files], "n_leading": int(n)}
+    res = {"files": [os.path.basename(f) for f in files], "n_leading": int(n),
+           "synthetic_bands": bands}
 
     c8 = linear_counts(phi, 8)
     h8, k8, _ = cp_h(c8, n)
@@ -122,18 +184,19 @@ def main():
         res["B_linear_b%d" % b] = {"h_inf": h, "max_count": k, "B": 1 << b}
 
     u, counts = empirical_abs(phi)
-    hC, kC, _ = cp_h(counts, n)
+    hC, kC, _ = cp_h(counts, n, B=args.B_ref)
     arg = int(np.argmax(counts))
     res["C_empirical_abs"] = {
         "h_inf": hC,
-        "B_eff": int(len(u)),
+        "B_eff_real": int(len(u)),
+        "B_ref": int(args.B_ref),
         "max_count": kC,
         "max_count_over_n": float(kC / n),
         "argmax_phi": float(np.array([u[arg]], dtype=np.uint32).view(np.float32)[0]),
     }
 
     ua = np.ascontiguousarray(np.abs(phi).astype(np.float32)).view(np.uint32)
-    h2, k2, n2, mode2 = two_stage_h(ua)
+    h2, k2, n2, mode2 = two_stage_h(ua, split_seed=args.split_seed)
     res["C_two_stage"] = {
         "h_inf": h2,
         "n_select": int(len(ua) // 2),
@@ -142,52 +205,34 @@ def main():
         "selected_phi": float(np.array([mode2], dtype=np.uint32).view(np.float32)[0]),
     }
 
-    rng = np.random.default_rng(args.seed)
-    x = rng.uniform(0.0, math.pi, args.synthetic_events)
-    q = quantize_lattice(x)
-    uq, cq = np.unique(np.ascontiguousarray(q).view(np.uint32), return_counts=True)
-    hS, kS, _ = cp_h(cq, len(q))
-    res["S_synthetic_uniform"] = {
-        "h_inf": hS,
-        "B_eff": int(len(uq)),
-        "max_count": kS,
-        "max_count_over_n": float(kS / len(q)),
-    }
-
-    qb = np.ascontiguousarray(q).view(np.uint32)
-    hS2, kS2, nS2, modeS2 = two_stage_h(qb)
-    res["S_two_stage"] = {
-        "h_inf": hS2,
-        "n_select": int(len(qb) // 2),
-        "n_certify": int(nS2),
-        "certify_count": kS2,
-        "selected_phi": float(np.array([modeS2], dtype=np.uint32).view(np.float32)[0]),
-    }
-
     json.dump(res, open(args.out, "w"), indent=1)
     print(json.dumps(res, indent=1))
 
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
+    if args.fig:
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
 
-    labels = ["b=8", "b=12", "b=13", "b=14", "empirical", "2-stage", "synthetic", "synth 2-stage"]
-    hs = [res["A_linear_b8"]["h_inf"], res["A_linear_b12"]["h_inf"],
-          res["B_linear_b13"]["h_inf"], res["B_linear_b14"]["h_inf"],
-          res["C_empirical_abs"]["h_inf"], res["C_two_stage"]["h_inf"],
-          res["S_synthetic_uniform"]["h_inf"], res["S_two_stage"]["h_inf"]]
-    fig, ax = plt.subplots(figsize=(9, 4.4))
-    ax.bar(labels, hs, color=["#8c8c8c", "#2b5d8a", "#5a8fbf", "#8fb8d9",
-                              "#b23a2f", "#d97b6c", "#d9a441", "#e8c37a"])
-    ax.axhline(12.18, color="#b23a2f", ls="--", lw=1, label="S1 ceiling 12.18")
-    ax.axhline(12.31, color="#d9a441", ls=":", lw=1, label="S2 point 12.31")
-    ax.axhline(11.3098, color="#2b5d8a", ls=":", lw=1, label="linear b=12, 11.31")
-    ax.set_ylabel(r"$h_\infty$ [bit/event]")
-    ax.set_title("E2: lattice-aligned vs linear binning")
-    ax.legend(frameon=False, fontsize=8)
-    fig.tight_layout()
-    fig.savefig(args.fig, dpi=160)
-    print("figure ->", args.fig)
+        labels = ["b=8", "b=12", "b=13", "b=14", "empirical", "2-stage",
+                  "synth S1", "synth S2"]
+        hs = [res["A_linear_b8"]["h_inf"], res["A_linear_b12"]["h_inf"],
+              res["B_linear_b13"]["h_inf"], res["B_linear_b14"]["h_inf"],
+              res["C_empirical_abs"]["h_inf"], res["C_two_stage"]["h_inf"],
+              bands["S1_mean"], bands["S2_mean"]]
+        fig, ax = plt.subplots(figsize=(9, 4.4))
+        ax.bar(labels, hs, color=["#8c8c8c", "#2b5d8a", "#5a8fbf", "#8fb8d9",
+                                  "#b23a2f", "#d97b6c", "#d9a441", "#e8c37a"])
+        ax.axhline(bands["S1_mean"], color="#b23a2f", ls="--", lw=1,
+                   label="S1 synthetic mean %.2f" % bands["S1_mean"])
+        ax.axhline(bands["S2_mean"], color="#d9a441", ls=":", lw=1,
+                   label="S2 synthetic mean %.2f" % bands["S2_mean"])
+        ax.axhline(11.3098, color="#2b5d8a", ls=":", lw=1, label="linear b=12, 11.31")
+        ax.set_ylabel(r"$h_\infty$ [bit/event]")
+        ax.set_title("E2: lattice-aligned vs linear binning")
+        ax.legend(frameon=False, fontsize=8)
+        fig.tight_layout()
+        fig.savefig(args.fig, dpi=160)
+        print("figure ->", args.fig)
 
 
 if __name__ == "__main__":

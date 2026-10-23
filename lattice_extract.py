@@ -49,7 +49,11 @@ def main():
     bits = np.ascontiguousarray(arr).view(np.uint32)
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     bin_path = args.out + ".lattice.bin"
-    bits.tofile(bin_path)
+    bin_tmp = bin_path + ".tmp"
+    bits.tofile(bin_tmp)
+    with open(bin_tmp, "rb+") as fh:
+        os.fsync(fh.fileno())
+    os.replace(bin_tmp, bin_path)
 
     manifest = {
         "extractor": "leading-jet phi, raw float32 bit patterns (uint32, native order)",
@@ -69,8 +73,12 @@ def main():
         },
         "timestamp_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
-    with open(args.out + ".manifest.json", "w") as fh:
+    man_tmp = args.out + ".manifest.json.tmp"
+    with open(man_tmp, "w") as fh:
         json.dump(manifest, fh, indent=1)
+        fh.flush()
+        os.fsync(fh.fileno())
+    os.replace(man_tmp, args.out + ".manifest.json")
     print("%s: %d leading jets" % (args.out, len(arr)))
 
 

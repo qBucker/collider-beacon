@@ -11,4 +11,6 @@ conditioning/out/*.bits.bin
 audit/out/*hits*.csv
 audit/build/
 latticeG/*.lattice.bin
+latticeG/*.tmp
 lattice-batch.log
+lattice-retry-*.log
