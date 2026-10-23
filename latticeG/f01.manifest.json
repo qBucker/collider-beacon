@@ -1,0 +1,20 @@
+{
+ "extractor": "leading-jet phi, raw float32 bit patterns (uint32, native order)",
+ "params": {
+  "files": [
+   "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-1.root"
+  ],
+  "pt_min": 20.0,
+  "eta_max": 2.5,
+  "batch": 50000,
+  "max_events": 0
+ },
+ "n_leading": 23006,
+ "lattice_file": "f01.lattice.bin",
+ "lattice_sha256": "b437cda5a4687e026e22f29d996b51e816ef1cfd1ee7ff665727b712d854f657",
+ "code_sha256": {
+  "lattice_extract.py": "be44f5f4656f5294e5dcbb186385653473a7922a25966f46477d5a17d37c6e66",
+  "phase0_extract.py": "9272d4dfb2d420cb7cc46ef156c6f179161da8c023b11d34fa76b9c48f4d1f3e"
+ },
+ "timestamp_utc": "2026-10-23T13:06:07Z"
+}

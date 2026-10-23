@@ -10,3 +10,5 @@ runG12-local/
 conditioning/out/*.bits.bin
 audit/out/*hits*.csv
 audit/build/
+latticeG/*.lattice.bin
+lattice-batch.log

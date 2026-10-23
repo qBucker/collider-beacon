@@ -1,0 +1,186 @@
+{
+ "root": "/home/shuix/projects/deepseekharness/beacon-paper/phase0/data/nano_data2016_1-1.root",
+ "events_seen": 153011,
+ "leading_jets": 23006,
+ "alphabet_distinct": 15066,
+ "max_count": 8,
+ "max_count_over_n": 0.00034773537338085716,
+ "argmax_phi": 2.1484375,
+ "argmax_bits": "01000000000010011000000000000000",
+ "trailing_zero_hist": {
+  "11": 11519,
+  "12": 5669,
+  "13": 2895,
+  "14": 1422,
+  "15": 737,
+  "16": 365,
+  "17": 203,
+  "18": 101,
+  "19": 50,
+  "20": 27,
+  "21": 10,
+  "22": 5,
+  "30": 3
+ },
+ "octaves": [
+  {
+   "binade": -12,
+   "range": [
+    0.000244140625,
+    0.00048828125
+   ],
+   "events": 5,
+   "distinct": 5,
+   "ulp": 5.960464477539063e-08,
+   "pmax_if_uniform": 1.8972747694479864e-08
+  },
+  {
+   "binade": -11,
+   "range": [
+    0.00048828125,
+    0.0009765625
+   ],
+   "events": 3,
+   "distinct": 3,
+   "ulp": 1.1920928955078125e-07,
+   "pmax_if_uniform": 3.794549538895973e-08
+  },
+  {
+   "binade": -10,
+   "range": [
+    0.0009765625,
+    0.001953125
+   ],
+   "events": 6,
+   "distinct": 6,
+   "ulp": 2.384185791015625e-07,
+   "pmax_if_uniform": 7.589099077791946e-08
+  },
+  {
+   "binade": -9,
+   "range": [
+    0.001953125,
+    0.00390625
+   ],
+   "events": 8,
+   "distinct": 8,
+   "ulp": 4.76837158203125e-07,
+   "pmax_if_uniform": 1.5178198155583891e-07
+  },
+  {
+   "binade": -8,
+   "range": [
+    0.00390625,
+    0.0078125
+   ],
+   "events": 28,
+   "distinct": 28,
+   "ulp": 9.5367431640625e-07,
+   "pmax_if_uniform": 3.0356396311167783e-07
+  },
+  {
+   "binade": -7,
+   "range": [
+    0.0078125,
+    0.015625
+   ],
+   "events": 58,
+   "distinct": 58,
+   "ulp": 1.9073486328125e-06,
+   "pmax_if_uniform": 6.071279262233557e-07
+  },
+  {
+   "binade": -6,
+   "range": [
+    0.015625,
+    0.03125
+   ],
+   "events": 122,
+   "distinct": 122,
+   "ulp": 3.814697265625e-06,
+   "pmax_if_uniform": 1.2142558524467113e-06
+  },
+  {
+   "binade": -5,
+   "range": [
+    0.03125,
+    0.0625
+   ],
+   "events": 249,
+   "distinct": 245,
+   "ulp": 7.62939453125e-06,
+   "pmax_if_uniform": 2.4285117048934226e-06
+  },
+  {
+   "binade": -4,
+   "range": [
+    0.0625,
+    0.125
+   ],
+   "events": 431,
+   "distinct": 420,
+   "ulp": 1.52587890625e-05,
+   "pmax_if_uniform": 4.857023409786845e-06
+  },
+  {
+   "binade": -3,
+   "range": [
+    0.125,
+    0.25
+   ],
+   "events": 947,
+   "distinct": 890,
+   "ulp": 3.0517578125e-05,
+   "pmax_if_uniform": 9.71404681957369e-06
+  },
+  {
+   "binade": -2,
+   "range": [
+    0.25,
+    0.5
+   ],
+   "events": 1918,
+   "distinct": 1688,
+   "ulp": 6.103515625e-05,
+   "pmax_if_uniform": 1.942809363914738e-05
+  },
+  {
+   "binade": -1,
+   "range": [
+    0.5,
+    1.0
+   ],
+   "events": 3643,
+   "distinct": 2895,
+   "ulp": 0.0001220703125,
+   "pmax_if_uniform": 3.885618727829476e-05
+  },
+  {
+   "binade": 0,
+   "range": [
+    1.0,
+    2.0
+   ],
+   "events": 7274,
+   "distinct": 4824,
+   "ulp": 0.000244140625,
+   "pmax_if_uniform": 7.771237455658952e-05
+  },
+  {
+   "binade": 1,
+   "range": [
+    2.0,
+    4.0
+   ],
+   "events": 8314,
+   "distinct": 3874,
+   "ulp": 0.00048828125,
+   "pmax_if_uniform": 0.00015542474911317905
+  }
+ ],
+ "pmax_theory": 0.00015542474911317905,
+ "h_floor_single_value": 12.651496129472319,
+ "eps_cp_full_run": 0.29400165998314653,
+ "h_pred_full_run": 12.357494469489172,
+ "note": "h_pred uses p_max = ULP/pi of the coarsest occupied octave and n=5.211e6; the empirical alphabet uses B_eff and the measured max."
+}
