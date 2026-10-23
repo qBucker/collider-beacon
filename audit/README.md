@@ -48,10 +48,18 @@ the selection is documented in `make_events.py`.
 | H→γγ | 801/2000 | 729 | 124.24 | 0.27 | 6.21 | 492σ |
 
 The H 2,000-event production was run in four 500-event chunks (a local
-15-minute job limit); `run_audit.sh` runs 2,000 in one go. Mass closure against
+15-minute job limit); `run_audit.sh` runs 2,000 in one go. The 68% width is
+half the 16–84% interval (one standard deviation for a Gaussian). The
+38.6σ/492σ are shifts in units of the median statistical uncertainty: a
+controlled simulated shift, not an experimental discovery. Mass closure against
 the generator-level four-vectors: Z median difference 0.04 GeV, RMS 0.61 GeV
 (1742 events); H median −0.77 GeV, 90% within 1.44 GeV (801 events, no split;
-a small mis-clustered tail remains).
+a small mis-clustered tail remains). The generator-level Z events in the window
+have median 90.78 GeV (FSR, off-shell, acceptance), so the 0.37 GeV difference
+from the nominal Z pole is a sample property, not a reconstruction bias; the H
+reconstruction carries a −0.61% bias from calorimeter energy leakage and
+clustering. The H width of 0.27 GeV (0.22%) is consistent with an ECAL constant
+term of ≈0.4% without noise or pileup; the audit uses relative peak positions.
 
 ## Audit interpretation
 
@@ -82,8 +90,9 @@ calorimeter; the Z sample is ~25 s for 2,000 events.
 - The detector is simplified; the Z mass width is dominated by the six-layer
   circle fit (σ68 ≈ 3.3 GeV), and the H reconstruction efficiency is limited by
   cluster merging at small photon separation.
-- The absolute peak positions carry a per-mille calibration bias from energy
-  leakage and the tracker fit; the audit uses relative positions.
+- The absolute peak positions carry a −0.04% closure bias (Z) and a −0.61%
+  reconstruction bias (H, energy leakage and clustering); the audit uses
+  relative positions.
 - The 5% drift is an analysis-level calibration model, not an injection of
   tampered detector data. A production audit would define the tamper model
   before data taking.

@@ -6,8 +6,14 @@ from the previous block output.
 
 ## Protocol
 
-For a block of `n` bits carrying `n_events = n / b` events, with certified
-per-event min-entropy `h_inf`:
+For a block of `n` bits carrying `n_events = n / b` events, with the pooled
+certified per-event min-entropy `h_inf` of the run applied block-wise under the
+stationarity verified in the paper:
+
+- the per-block CP bound at 25,000 events would be `eps_CP ~ 1.7` bit and
+  would reduce `m` by about 13%; the pooled certificate is used because the
+  CP bound is a confidence statement on the distribution parameter, not on the
+  block sample, and the blocks are stationary;
 
 - output length `m = floor(n_events * h_inf) - 128` bits (the 128-bit
   leftover-hash margin);
@@ -67,5 +73,6 @@ The Toeplitz family is 2-universal with a uniform seed; the leftover-hash lemma
 gives `eps_LHL <= 2^-64` at the chosen 128-bit margin. The seed here is
 computational (SHAKE256), not an information-theoretic uniform string; the
 chained-seed hybrid argument of the companion paper bounds the seed defect by
-`delta_seed = 2^-64`. This is an engineering demonstration of Stage 2, not a
-production beacon.
+`delta_seed = 2^-64`. NIST STS zero flags are a sanity check; the security
+argument is the LHL bound with the certified `h_inf`, not the test suite. This
+is an engineering demonstration of Stage 2, not a production beacon.
