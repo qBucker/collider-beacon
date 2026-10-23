@@ -14,3 +14,7 @@ latticeG/*.lattice.bin
 latticeG/*.tmp
 lattice-batch.log
 lattice-retry-*.log
+lattice-sweep.log
+lattice-analysis.log
+lattice-integrity.log
+lattice-alpha.log
