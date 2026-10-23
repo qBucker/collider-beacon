@@ -1,0 +1,569 @@
+{
+ "protocol": "Stage-2 Toeplitz extraction, chained public seed",
+ "params": {
+  "run_dir": "runG12",
+  "b": 12,
+  "hinf": 11.3098,
+  "block_events": 100000,
+  "leftover_margin_bits": 128,
+  "seed_salt": "1",
+  "timestamp": "2026-10-23T00:00:00Z",
+  "files": [
+   "f01.bits.bin",
+   "f02.bits.bin",
+   "f03.bits.bin",
+   "f04.bits.bin",
+   "f05.bits.bin",
+   "f06.bits.bin",
+   "f07.bits.bin",
+   "f08.bits.bin",
+   "f09.bits.bin",
+   "f10.bits.bin",
+   "f11.bits.bin",
+   "f12.bits.bin",
+   "f13.bits.bin",
+   "f14.bits.bin",
+   "f15.bits.bin",
+   "f16.bits.bin",
+   "f17.bits.bin",
+   "f18.bits.bin",
+   "f19.bits.bin",
+   "f20.bits.bin",
+   "f21.bits.bin",
+   "f22.bits.bin",
+   "f23.bits.bin",
+   "f24.bits.bin",
+   "f25.bits.bin",
+   "f26.bits.bin",
+   "f27.bits.bin",
+   "f28.bits.bin",
+   "f29.bits.bin",
+   "f30.bits.bin",
+   "f31.bits.bin",
+   "f32.bits.bin",
+   "f33.bits.bin",
+   "f34.bits.bin",
+   "f35.bits.bin",
+   "f36.bits.bin",
+   "f37.bits.bin",
+   "f38.bits.bin",
+   "f39.bits.bin",
+   "f40.bits.bin",
+   "f41.bits.bin",
+   "f42.bits.bin",
+   "f43.bits.bin",
+   "f44.bits.bin",
+   "f45.bits.bin",
+   "f46.bits.bin",
+   "f47.bits.bin",
+   "f48.bits.bin",
+   "f49.bits.bin",
+   "f50.bits.bin",
+   "f51.bits.bin",
+   "f52.bits.bin",
+   "f53.bits.bin",
+   "f54.bits.bin",
+   "f55.bits.bin",
+   "f56.bits.bin",
+   "f57.bits.bin",
+   "f58.bits.bin",
+   "f59.bits.bin",
+   "f60.bits.bin",
+   "f61.bits.bin",
+   "f62.bits.bin",
+   "f63.bits.bin",
+   "f64.bits.bin",
+   "f65.bits.bin",
+   "f66.bits.bin",
+   "f67.bits.bin"
+  ],
+  "input_bits": 62540880
+ },
+ "seed_rule": "s0 = SHAKE256(tag || sorted params); s_r = SHAKE256(tag || pack(output_{r-1}))",
+ "leftover_hash": "m = floor(n_events * hinf) - 128",
+ "n_blocks": 53,
+ "input_bits": 62540880,
+ "output_bits": 58936953,
+ "output_sha256": "d6ae5fd6e159786f2f9e54a091618c0919f500277a63c9fe641a88ef3b125cec",
+ "wall_time_s": 16.19,
+ "blocks": [
+  {
+   "block": 0,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "s0",
+   "output_sha256": "d1595618043bdacc614db57246f75b8e04f4746e50ac598bbb0ac6520e874abf"
+  },
+  {
+   "block": 1,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "269646bf99dcf07853b43bab9a363ec52f268f2c9cbe899ce7acd15c2924df5e"
+  },
+  {
+   "block": 2,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "20e168e3a553d93de3fd3950e19bb77ca356435ec43c086177b528da7ac78cac"
+  },
+  {
+   "block": 3,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "8dc51b625e06ab49ff3851e7bf9386f243963c6b63813a4b1a653d04d3fb1764"
+  },
+  {
+   "block": 4,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "2437ee6f5a13ab62ea4a7741bdaed5459833243a7a4243e642245a850cf80ea5"
+  },
+  {
+   "block": 5,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "cab9504c5461b3b888634eda33b7c014126b929bca1d3da564529b5a20dcfd3e"
+  },
+  {
+   "block": 6,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "6f30d0e9f431a07316db5913139d2b9465c95dd7fda2e2519f328c40ff3ea0f0"
+  },
+  {
+   "block": 7,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "5f49e5b4078d85100f8c56e88c57853e04592b7a6399d384ec69b4fe9de31314"
+  },
+  {
+   "block": 8,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "181e7275d72d8e130981c6a41f85ce6513a8265596400a73366027c94bcd64e3"
+  },
+  {
+   "block": 9,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "704ad283c224aca4ef715ca3e43898a6c27c98d077073b2ba936ce29d210e4a5"
+  },
+  {
+   "block": 10,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "404322e6553dde72a002bf34ca9774d6d63347729fa6beb877fc2d79d2e5396a"
+  },
+  {
+   "block": 11,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "6b27630b5509e9ed3281b599bac34bb9df12194683ed1a821da9b283359f5067"
+  },
+  {
+   "block": 12,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "97364eea08aa9b4ba57626e677bfa8a614dae9d7c932f0d51d6f96f03560203a"
+  },
+  {
+   "block": 13,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "4681881d4f66105c31f4cf9691a554ab4aa95cb72b862dc694eb3d2d241fe545"
+  },
+  {
+   "block": 14,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "01bab46b974f33caa5a281a0053e63024f01ff1b7ff6c7c66cc6c347fdc40d28"
+  },
+  {
+   "block": 15,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "e68b9ab86a312c868098d0b62a5eadc390206673629faae0d4fc914892908d57"
+  },
+  {
+   "block": 16,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "1dc0443f5607c9b99e69066b673b1f35844054e806ae6e5f9dfdb21ba8ffcaa4"
+  },
+  {
+   "block": 17,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "cf5c3ce7acc586a381128fdda838a61c13795a4c91abbcc404920cbb054e48ec"
+  },
+  {
+   "block": 18,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "4ddb2a8305e93627f8a6f1c6c537545b14370fe25cff335f4cbae2a9c480309f"
+  },
+  {
+   "block": 19,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "ff2be16a46d9f17c087ed6df77a1479f062e47182d38d4725aa20c378c797124"
+  },
+  {
+   "block": 20,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "1c65a419be507d455776201c647c8b13827cd15159f829cd0651a8cf66a9ed64"
+  },
+  {
+   "block": 21,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "bcdc9cd0d6654213ac294d6d609da31567ee9c008d8cefbb81cab23177245900"
+  },
+  {
+   "block": 22,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "91253e8f9d09ac697cc8450a3ef6e3b89a9004925785d27253a1dc763d80a18d"
+  },
+  {
+   "block": 23,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "fc94750fc0ae572fd30ea706679c42dd3795a6cb27f772b5edfad66e31cff17f"
+  },
+  {
+   "block": 24,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "9e03351f2b1aba5ebb8704a82d8d279de097f00fcc63cda653cc5f00e8353c4a"
+  },
+  {
+   "block": 25,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "77c74dde95efac4ac5f4d3b62cad101b49bd0763888b7da198272156d22c08bc"
+  },
+  {
+   "block": 26,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "1292a093806445a87a5f111bb2e6d676e6926efdfde045e49233a06ecd698d4b"
+  },
+  {
+   "block": 27,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "ba0ff810b0ceabaea1e8a3251da6475e5b874739c16389b3651a4cc53ac9b8c6"
+  },
+  {
+   "block": 28,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "d36c975b7f5e2bc7bbef8e84c6fda45109f4036af51feea5780870e55ba3612d"
+  },
+  {
+   "block": 29,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "8228fb6bc9d7278d9644fec6e23006fa8071067825025f625a4298490fcce708"
+  },
+  {
+   "block": 30,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "8be6b62bf7f67f931b7f69db841ddec945506303a0994ef4cb5c0532e4bd933c"
+  },
+  {
+   "block": 31,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "0fb07dfe8271c85f227ea363d00c7f1c29fdef71420f7f8894d03ce2e72943a0"
+  },
+  {
+   "block": 32,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "3ab4829c1b80b868610301a75bc6c3f7254ed07ffcd1fa5f885f2f26a2f1aa54"
+  },
+  {
+   "block": 33,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "f06ba56ddb5164b493dcc7defe4046e72c63ed6e59ae95332ac1a312f4db91e1"
+  },
+  {
+   "block": 34,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "c5ddd84c3589800efb6fd2ecf4d756176a8136f4d210cd8d2946e091791a3dd8"
+  },
+  {
+   "block": 35,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "ab588b827d6a66c2ddd6135e8801fb367976503f58024a270e8270b34c3281ae"
+  },
+  {
+   "block": 36,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "5d0aba171c2342164bf2946cabdc297ed174c69c924f6cfa29caa424fe4cc1c6"
+  },
+  {
+   "block": 37,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "2349f7693d79b289b39397aadafcd57527fa7adf31c69cd1e14221939f60e2a0"
+  },
+  {
+   "block": 38,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "47bbfd0a0856733608eeca461b6451bfafc7ee3795cad78959e46ce3d9307334"
+  },
+  {
+   "block": 39,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "636e627be9b67e1ffa0ce6ba506f3c1046296855f71d13371af0dbd527de88ea"
+  },
+  {
+   "block": 40,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "3dc4210d4a8bea9239ed7125b7e820f0b5dcf72bfd5d27565c870e3f7de5b019"
+  },
+  {
+   "block": 41,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "7e6f56e2c97a09afe14a4fd7a624e817694aed458d4d3ef785a7a21a1906299d"
+  },
+  {
+   "block": 42,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "a90a739404953209d42179433e23fc4b64aaba665d2eaae7b0954a12d8803ec3"
+  },
+  {
+   "block": 43,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "a2e09ee861f42e590db3c004d5de9447f1ffb8288cbf53497858abdcd53fdf3f"
+  },
+  {
+   "block": 44,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "2736cff4c25a84f399f5a5cd4c13cc3b0b6f67e3ead7c30cf179eafcad6dffdc"
+  },
+  {
+   "block": 45,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "31740d01ea4ca9eb0ba6bc2c06b28b8583416f4ebf88c8893e0ce0a2113dc9db"
+  },
+  {
+   "block": 46,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "a36b8bc57f34acc562834681920d97fd14da63bf69c69c6bfa7c25db8e81100a"
+  },
+  {
+   "block": 47,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "6ea9b823728045fc78f1b9498f2aa4f90f843ca6017ec21ceb5bfc5491ec3e92"
+  },
+  {
+   "block": 48,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "58edcef136bf61234e17243d80ce7e7994f65d74934145ba865327c3626f6183"
+  },
+  {
+   "block": 49,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "c380e156502b2fd823732723ab8d790e88016de6010a4233bb405cb14a217195"
+  },
+  {
+   "block": 50,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "9f1fb14c9f24e2ec3ec22756c8e3172c70c99bfdcd60e2ce8eba6378a0e3771b"
+  },
+  {
+   "block": 51,
+   "events": 100000,
+   "n_bits": 1200000,
+   "m_bits": 1130852,
+   "seed_bits": 2330851,
+   "seed_rule": "chain",
+   "output_sha256": "e16d4eb737b69c3061de4aca2df5f0451b84651afbb80595be1c787ac470344e"
+  },
+  {
+   "block": 52,
+   "events": 11740,
+   "n_bits": 140880,
+   "m_bits": 132649,
+   "seed_bits": 273528,
+   "seed_rule": "chain",
+   "output_sha256": "d086b79c72413caf20a2b824435b84b39d56465834ccdf2277b6d0830070f3cf"
+  }
+ ],
+ "timestamp_utc": "2026-10-23T09:34:12Z"
+}
