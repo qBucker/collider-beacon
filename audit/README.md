@@ -45,12 +45,13 @@ the selection is documented in `make_events.py`.
 | channel | reconstructed | in window | peak [GeV] | sigma68 [GeV] | 5% shift [GeV] | significance |
 |---|---|---|---|---|---|---|
 | Z→μμ | 1742/2000 | 1253 | 90.82 | 3.31 | 4.53 | 38.6σ |
-| H→γγ | 182/500 | 168 | 124.24 | 0.25 | 6.20 | 258σ |
+| H→γγ | 801/2000 | 729 | 124.24 | 0.27 | 6.21 | 492σ |
 
-The H sample is the first 500 events (the 2,000-event production is slower;
-`run_audit.sh` runs 2,000 by default). Mass closure against the
-generator-level four-vectors: Z median difference 0.04 GeV, RMS 0.61 GeV
-(1742 events); H median −0.78 GeV, 90% within 1.35 GeV (182 events, no split).
+The H 2,000-event production was run in four 500-event chunks (a local
+15-minute job limit); `run_audit.sh` runs 2,000 in one go. Mass closure against
+the generator-level four-vectors: Z median difference 0.04 GeV, RMS 0.61 GeV
+(1742 events); H median −0.77 GeV, 90% within 1.44 GeV (801 events, no split;
+a small mis-clustered tail remains).
 
 ## Audit interpretation
 

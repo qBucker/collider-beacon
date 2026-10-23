@@ -10,12 +10,12 @@
    "shift_sigma_mean": 38.61023397257139
   },
   "$H\\to\\gamma\\gamma$": {
-   "n": 168,
-   "nominal_peak": 124.236396,
-   "nominal_sigma68": 0.2486699400000063,
-   "tampered_peak": 130.439628,
-   "shift_gev": 6.203232,
-   "shift_sigma_mean": 258.0466969130703
+   "n": 729,
+   "nominal_peak": 124.23513,
+   "nominal_sigma68": 0.2719731200000055,
+   "tampered_peak": 130.445272,
+   "shift_gev": 6.2101419999999905,
+   "shift_sigma_mean": 492.0262128472309
   }
  }
 }

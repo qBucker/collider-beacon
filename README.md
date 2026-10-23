@@ -46,8 +46,8 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   `verify` passes and tamper tests fail. Details: `protocol/README.md`.
 - Geant4 audit (2026-10-23): simplified full simulation (six Si layers + PbWO4
   calorimeter); Z→μμ peak 90.82 GeV (σ68 3.31, 2000 events), H→γγ 124.24 GeV
-  (σ68 0.25, 500 events); a 5% calibration drift shifts the peaks by
-  4.53/6.20 GeV at 38.6σ/258σ. Details: `audit/README.md`.
+  (σ68 0.27, 2000 events); a 5% calibration drift shifts the peaks by
+  4.53/6.21 GeV at 38.6σ/492σ. Details: `audit/README.md`.
 
 ## Repository layout
 
