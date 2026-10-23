@@ -5,343 +5,276 @@
   "plan_sha256": "0b8ff375e4c4b98aa1e6733a6519f65ef482d450898bd3120cf7d1a5d02da9ed",
   "entries": [
    {
-    "path": "nano_data2016_1-1.root",
-    "size": 1098499319,
-    "checksum": "adler32:9a8ac2aa"
+    "path": "runG12/f01.bits.bin",
+    "sha256": "1fffe71b85f7da4bba82dc6af2acf3e054ca5a9fb6bfd788ea74966a84c1afeb"
    },
    {
-    "path": "nano_data2016_1-2.root",
-    "size": 1444621706,
-    "checksum": "adler32:d2a6175b"
+    "path": "runG12/f02.bits.bin",
+    "sha256": "7e0ac790a67c1bbff34e9bedb61fff13593b5bbd9145a7de20732e9a3f70950a"
    },
    {
-    "path": "nano_data2016_1-3.root",
-    "size": 1328814455,
-    "checksum": "adler32:8b6d7fa4"
+    "path": "runG12/f03.bits.bin",
+    "sha256": "530464811dd70852eaa80ac02bf7b86892d3ea34c8166f3729df393470415664"
    },
    {
-    "path": "nano_data2016_1-4.root",
-    "size": 775705011,
-    "checksum": "adler32:94fb8ba4"
+    "path": "runG12/f04.bits.bin",
+    "sha256": "325e4110c75b15d3084c9a6bb0b45a0b856983ca2f30346904bf9cff5a944580"
    },
    {
-    "path": "nano_data2016_1-5.root",
-    "size": 1060268108,
-    "checksum": "adler32:4c804e91"
+    "path": "runG12/f05.bits.bin",
+    "sha256": "892ad1e9274fe6b826e2ef24554a0ec7a3c7b67ae343308375577600f30a304e"
    },
    {
-    "path": "nano_data2016_1-6.root",
-    "size": 1055555838,
-    "checksum": "adler32:6810862d"
+    "path": "runG12/f06.bits.bin",
+    "sha256": "20bca8a6fb9c07cafe1373b3923ac9d8a84f7156a9f67c9c90610493c48e9f9a"
    },
    {
-    "path": "nano_data2016_1-7.root",
-    "size": 1287288248,
-    "checksum": "adler32:92b6ed71"
+    "path": "runG12/f07.bits.bin",
+    "sha256": "6b8c99b036b95ccb1e0867fc88344294c0ccb4ce1524b065110772f4b177a396"
    },
    {
-    "path": "nano_data2016_1-8.root",
-    "size": 1499611489,
-    "checksum": "adler32:13c39bac"
+    "path": "runG12/f08.bits.bin",
+    "sha256": "82e367b03f1913bb5c29cd6735d22ed213f9c6efb419088936c4f5dd0826869f"
    },
    {
-    "path": "nano_data2016_1-9.root",
-    "size": 277616305,
-    "checksum": "adler32:bfd52821"
+    "path": "runG12/f09.bits.bin",
+    "sha256": "89a1de8fa4fc6df4c4e858c93611e2bac07eac43f39617443537c11402a0933e"
    },
    {
-    "path": "nano_data2016_1.root",
-    "size": 3416301494,
-    "checksum": "adler32:ec4a8edd"
+    "path": "runG12/f10.bits.bin",
+    "sha256": "3b6c6ceabbc3c756f78d2023f7b0b16a983c3b3f5b552581fbb589410c6af24c"
    },
    {
-    "path": "nano_data2016_10.root",
-    "size": 4640942682,
-    "checksum": "adler32:de8cd053"
+    "path": "runG12/f11.bits.bin",
+    "sha256": "c540054f6148caa91ff3f2c3f462573c6c7223cc3d7bddf61f4788d38dbe9e9f"
    },
    {
-    "path": "nano_data2016_11.root",
-    "size": 3357412045,
-    "checksum": "adler32:52fef181"
+    "path": "runG12/f12.bits.bin",
+    "sha256": "a0662e44018e77ae95d90433ac3013a14d8f18c5321200bd374f1f77d3ad68c0"
    },
    {
-    "path": "nano_data2016_12.root",
-    "size": 3105081086,
-    "checksum": "adler32:31f823a2"
+    "path": "runG12/f13.bits.bin",
+    "sha256": "1458528a35834a65e23fd49838664b1e99920626b9a82daa804fa1a556d03170"
    },
    {
-    "path": "nano_data2016_13.root",
-    "size": 3447424018,
-    "checksum": "adler32:6d06cb8b"
+    "path": "runG12/f14.bits.bin",
+    "sha256": "c9d97011efa00b663df478d8316748f729c8c054e2f9c148161efe6e0f10d95b"
    },
    {
-    "path": "nano_data2016_14.root",
-    "size": 2600071868,
-    "checksum": "adler32:b7378f30"
+    "path": "runG12/f15.bits.bin",
+    "sha256": "a6905f99f677cda497080c5292397809f8e6e5f6485d2f7987a03e2e386b0f7f"
    },
    {
-    "path": "nano_data2016_15.root",
-    "size": 3940373309,
-    "checksum": "adler32:20a51fa1"
+    "path": "runG12/f16.bits.bin",
+    "sha256": "cb684790fc968b30fdf382ffd2ea234723d19027ac65642098a5f7a620b71925"
    },
    {
-    "path": "nano_data2016_16.root",
-    "size": 4587854361,
-    "checksum": "adler32:5a0441d3"
+    "path": "runG12/f17.bits.bin",
+    "sha256": "1c5751a5aa907f3c3003a788da34887db4ea3310f97f98ef1fd68bf8ec0382db"
    },
    {
-    "path": "nano_data2016_17.root",
-    "size": 4760463013,
-    "checksum": "adler32:a12a8f2e"
+    "path": "runG12/f18.bits.bin",
+    "sha256": "15d47e9681b5704d2d6802aad3fbc3bad9464989cdae621b121ed3bd41155536"
    },
    {
-    "path": "nano_data2016_18.root",
-    "size": 3749642930,
-    "checksum": "adler32:536ca237"
+    "path": "runG12/f19.bits.bin",
+    "sha256": "248bd7c42f881eeb03b13b137e94512e2e6540293e844607ce17289fce79892a"
    },
    {
-    "path": "nano_data2016_19.root",
-    "size": 4514554761,
-    "checksum": "adler32:f4db1c22"
+    "path": "runG12/f20.bits.bin",
+    "sha256": "14e09208b3076db8532b75a34ee87169f03b7440088155eb0ef4d963aa1efc8a"
    },
    {
-    "path": "nano_data2016_2.root",
-    "size": 3752184266,
-    "checksum": "adler32:deb067a2"
+    "path": "runG12/f21.bits.bin",
+    "sha256": "c12c6d8193708dd36460923213fbae4a3fc0113215f67395ce683a3330ba4caa"
    },
    {
-    "path": "nano_data2016_20.root",
-    "size": 4020172160,
-    "checksum": "adler32:ad8c278c"
+    "path": "runG12/f22.bits.bin",
+    "sha256": "15a35a587df39188c99d2c44ad5f171800ba9bd10406111b43f709ff04333dea"
    },
    {
-    "path": "nano_data2016_21.root",
-    "size": 4610175474,
-    "checksum": "adler32:0ad029e9"
+    "path": "runG12/f23.bits.bin",
+    "sha256": "70505e8ffb8057e59de1852072d4b31f76f0bb7a38c728cab3f8fe4e1a0c8c85"
    },
    {
-    "path": "nano_data2016_22.root",
-    "size": 3992652478,
-    "checksum": "adler32:a6f037a9"
+    "path": "runG12/f24.bits.bin",
+    "sha256": "67443b93e1b4b7e72844eeec296b3eeaaa7c5ef548740cfaf324ce49352492b7"
    },
    {
-    "path": "nano_data2016_23.root",
-    "size": 3151232753,
-    "checksum": "adler32:d17f0982"
+    "path": "runG12/f25.bits.bin",
+    "sha256": "cde2fda71f5d2a0fc554de728867eb3f121742caa9f76fb1ebfeeb5902b47a55"
    },
    {
-    "path": "nano_data2016_24.root",
-    "size": 4061590980,
-    "checksum": "adler32:729f9a50"
+    "path": "runG12/f26.bits.bin",
+    "sha256": "31e816fb5a37bfb1d08c356a3b8ecb7f74ace25fce7737ae8a62d35b5d8c1ca4"
    },
    {
-    "path": "nano_data2016_25.root",
-    "size": 4122530166,
-    "checksum": "adler32:c7784c50"
+    "path": "runG12/f27.bits.bin",
+    "sha256": "e3059af45af9ddc180015c5fd9b7970e0a547a2ba7acd6923f44f6cfee14176a"
    },
    {
-    "path": "nano_data2016_26.root",
-    "size": 3674247280,
-    "checksum": "adler32:79a250ac"
+    "path": "runG12/f28.bits.bin",
+    "sha256": "65f07d220e33ece98fc646cc42c23e8baafc3e82c8ffa359d4e86512ceff8063"
    },
    {
-    "path": "nano_data2016_27.root",
-    "size": 3613827557,
-    "checksum": "adler32:15c38665"
+    "path": "runG12/f29.bits.bin",
+    "sha256": "3f57f35ea39e34ddba5af00e2a1665dcdecc6e2d45f6d8886d98c8d6e4843b8a"
    },
    {
-    "path": "nano_data2016_28.root",
-    "size": 4910924775,
-    "checksum": "adler32:ba137811"
+    "path": "runG12/f30.bits.bin",
+    "sha256": "378b6c226285f32dd184c2a9a6d01e9399d1e902782b0b66de9de4d15bb07a57"
    },
    {
-    "path": "nano_data2016_29.root",
-    "size": 3521099436,
-    "checksum": "adler32:f4bc3370"
+    "path": "runG12/f31.bits.bin",
+    "sha256": "78d9a2db7f84eacc0a8c37f8dd1384e3893fc34daf3d0b7facbb106b10b485d9"
    },
    {
-    "path": "nano_data2016_3.root",
-    "size": 2989748569,
-    "checksum": "adler32:c004df43"
+    "path": "runG12/f32.bits.bin",
+    "sha256": "c2b6a46c5989c358b4c1e3e099e8b8b868d189eef38c971749ef8f13dec477c1"
    },
    {
-    "path": "nano_data2016_30.root",
-    "size": 3904182395,
-    "checksum": "adler32:912fed90"
+    "path": "runG12/f33.bits.bin",
+    "sha256": "817d4ca9e5d1bf8dea2a5a176fa82de7a08afc462a4acccb0ad98585975f5f6d"
    },
    {
-    "path": "nano_data2016_31.root",
-    "size": 4243966698,
-    "checksum": "adler32:2d88098a"
+    "path": "runG12/f34.bits.bin",
+    "sha256": "462fa3075789ae99b368043a7b17514cdb1846ca052ea69808f0a465f32a9b67"
    },
    {
-    "path": "nano_data2016_32.root",
-    "size": 4002706442,
-    "checksum": "adler32:ab13c0df"
+    "path": "runG12/f35.bits.bin",
+    "sha256": "4a506bfae49eb24cda11ea3b44816f125218b476444d1973174d2ce033ef9851"
    },
    {
-    "path": "nano_data2016_33.root",
-    "size": 4573063211,
-    "checksum": "adler32:64a82d9e"
+    "path": "runG12/f36.bits.bin",
+    "sha256": "62f94600d25107109ec0aa30ce5620f82af1210128b9b0fb37284d78b5f231f0"
    },
    {
-    "path": "nano_data2016_34.root",
-    "size": 4208271878,
-    "checksum": "adler32:4a5cd397"
+    "path": "runG12/f37.bits.bin",
+    "sha256": "f19d645ca7c8574c42902964f5c48effeca2513dfbd145191c88f6afaec4812d"
    },
    {
-    "path": "nano_data2016_35.root",
-    "size": 3608291663,
-    "checksum": "adler32:96fd08ff"
+    "path": "runG12/f38.bits.bin",
+    "sha256": "92ae0f4a27117541ba84bdc307a934b154fdba46c7464d013b24589ffb7cd6a2"
    },
    {
-    "path": "nano_data2016_36.root",
-    "size": 3994149574,
-    "checksum": "adler32:c88e0618"
+    "path": "runG12/f39.bits.bin",
+    "sha256": "8a677e5675f12175a61c877a545a510cab8e98241d4123e0e13bf68dedd87a81"
    },
    {
-    "path": "nano_data2016_37.root",
-    "size": 4467999246,
-    "checksum": "adler32:81bab53a"
+    "path": "runG12/f40.bits.bin",
+    "sha256": "f66e19a43cc53dee66e768fa2791fd49a4cb1f96bbd2a0892e15818ef594740b"
    },
    {
-    "path": "nano_data2016_38.root",
-    "size": 4179456705,
-    "checksum": "adler32:de33c734"
+    "path": "runG12/f41.bits.bin",
+    "sha256": "100e9c1943a0485dd7aff257db10c9e5b6aac1a00b46ed93415fcc95556b7b18"
    },
    {
-    "path": "nano_data2016_39.root",
-    "size": 4349552511,
-    "checksum": "adler32:5c59e6c7"
+    "path": "runG12/f42.bits.bin",
+    "sha256": "38611b66d4fbb9966f06540893ddd5b0d4736de49a334ca069c8bdd63789a060"
    },
    {
-    "path": "nano_data2016_4.root",
-    "size": 3846348599,
-    "checksum": "adler32:3a55d13a"
+    "path": "runG12/f43.bits.bin",
+    "sha256": "8964a982370260a459580c4186d1ff29086ae22a84c35def8e2ee360c4c3a2ad"
    },
    {
-    "path": "nano_data2016_40.root",
-    "size": 4381778904,
-    "checksum": "adler32:5bd2c886"
+    "path": "runG12/f44.bits.bin",
+    "sha256": "d02092709f547499f8dd18a707b40b66a7720cdcf1434b484d5ed5eaa1347232"
    },
    {
-    "path": "nano_data2016_41.root",
-    "size": 1314295265,
-    "checksum": "adler32:f7819c81"
+    "path": "runG12/f45.bits.bin",
+    "sha256": "9a0e7d82e6c6666994f238268c07b0485c57b8e5355465bf3385c0d5e82957d1"
    },
    {
-    "path": "nano_data2016_42.root",
-    "size": 123124864,
-    "checksum": "adler32:1dfb8451"
+    "path": "runG12/f46.bits.bin",
+    "sha256": "f87132c1fef65816f1892759936e735b45fe202af65a22f768c742058b813c28"
    },
    {
-    "path": "nano_data2016_43.root",
-    "size": 4653509785,
-    "checksum": "adler32:916aea0e"
+    "path": "runG12/f47.bits.bin",
+    "sha256": "91cbe11f3c18a1ebab9a4a77783d0c553b1703213666728ec2d9c0b8de078d9a"
    },
    {
-    "path": "nano_data2016_44.root",
-    "size": 5170727023,
-    "checksum": "adler32:e98ee24b"
+    "path": "runG12/f48.bits.bin",
+    "sha256": "bfe87109e739f8f27d5f196ca2abd22b66afbe1315a1f1655bb852e76ae6eb78"
    },
    {
-    "path": "nano_data2016_45.root",
-    "size": 132190008,
-    "checksum": "adler32:f0f4e05c"
+    "path": "runG12/f49.bits.bin",
+    "sha256": "d0aa691a3fdb1fb0efd2b54e0c0a9ff104ac0b75ea3e7e5d4f037c1cf4021d76"
    },
    {
-    "path": "nano_data2016_46.root",
-    "size": 3734312645,
-    "checksum": "adler32:210b5e97"
+    "path": "runG12/f50.bits.bin",
+    "sha256": "39c526a7d55bdf926a93dcd33b818d51142ff6bcb41a20a35001374e159a1691"
    },
    {
-    "path": "nano_data2016_47.root",
-    "size": 3541315804,
-    "checksum": "adler32:752dd54c"
+    "path": "runG12/f51.bits.bin",
+    "sha256": "869d06b5827f31c18adb3bc8217060720a1fead5ab4453845f0257727da2f465"
    },
    {
-    "path": "nano_data2016_48.root",
-    "size": 3654556039,
-    "checksum": "adler32:d3295078"
+    "path": "runG12/f52.bits.bin",
+    "sha256": "345ccf0e92fb762de2d1de09ae7c4f79c0fd7203d690a4a07b7b9c39d5b51b3d"
    },
    {
-    "path": "nano_data2016_49.root",
-    "size": 1534092399,
-    "checksum": "adler32:975894b1"
+    "path": "runG12/f53.bits.bin",
+    "sha256": "c692c01d256b7e47f0c12dd60686dbbc1c68f00d4eb85bb56d1ea15d52227a6e"
    },
    {
-    "path": "nano_data2016_5.root",
-    "size": 3040586612,
-    "checksum": "adler32:151d2a86"
+    "path": "runG12/f54.bits.bin",
+    "sha256": "ecd1a3a6239da32c576bf9a06924cec0383c167d7bc8b0cfa021b9efae8a287f"
    },
    {
-    "path": "nano_data2016_50.root",
-    "size": 3547529354,
-    "checksum": "adler32:01cfd36e"
+    "path": "runG12/f55.bits.bin",
+    "sha256": "3b6616c006f11cef8036ad226b116df1034f5ab52f04134bf50c668a37bb36b3"
    },
    {
-    "path": "nano_data2016_51.root",
-    "size": 2752216246,
-    "checksum": "adler32:98b8341a"
+    "path": "runG12/f56.bits.bin",
+    "sha256": "18f9134d0fdd18bf6d20d13fec15f79b32f25b8856abd16a431a11344e9d5134"
    },
    {
-    "path": "nano_data2016_53.root",
-    "size": 4442389206,
-    "checksum": "adler32:c67cf40e"
+    "path": "runG12/f57.bits.bin",
+    "sha256": "217f016acdc1c62bdb8f5450ac69a2378bb23170e4b02f35a6bc91fb0c6289e5"
    },
    {
-    "path": "nano_data2016_54.root",
-    "size": 4434657676,
-    "checksum": "adler32:10a648c7"
+    "path": "runG12/f58.bits.bin",
+    "sha256": "2938bbc2ebd0420660747f8063a20d0ac457d82f80db87b686a3d2712cca819b"
    },
    {
-    "path": "nano_data2016_55.root",
-    "size": 4446598255,
-    "checksum": "adler32:be61b1ec"
+    "path": "runG12/f59.bits.bin",
+    "sha256": "1a9957541ed2413518a7f6d7e390a65c7e1a86979bfbee011a6c51b618b8b6be"
    },
    {
-    "path": "nano_data2016_56.root",
-    "size": 2286559120,
-    "checksum": "adler32:ae63209e"
+    "path": "runG12/f60.bits.bin",
+    "sha256": "8c130c381dbc8c00ec169fe490f92718bbe822dfe08fc108aaa7dbaaceb7a9a6"
    },
    {
-    "path": "nano_data2016_57.root",
-    "size": 4213914848,
-    "checksum": "adler32:343d6dd3"
+    "path": "runG12/f61.bits.bin",
+    "sha256": "8c0ded5f2ca42d0eeeb2bfb29590970fbe5c128b28d2bbccba368690a35d604c"
    },
    {
-    "path": "nano_data2016_58.root",
-    "size": 4158901664,
-    "checksum": "adler32:10400ca2"
+    "path": "runG12/f62.bits.bin",
+    "sha256": "45846407c57030ecddbf3b0ee8083d5e89dcdee83649e133055ea7452ade50e0"
    },
    {
-    "path": "nano_data2016_59.root",
-    "size": 3137705670,
-    "checksum": "adler32:2c94c694"
+    "path": "runG12/f63.bits.bin",
+    "sha256": "72de16fd7c77f05436794599443315f767a4d51e175c508d69ccf0b05b99ba96"
    },
    {
-    "path": "nano_data2016_6.root",
-    "size": 4112110868,
-    "checksum": "adler32:e5327218"
+    "path": "runG12/f64.bits.bin",
+    "sha256": "9c9a44b99d041652da76551a80534eab6a7c9e299fe9bc6f5b402e0012c33478"
    },
    {
-    "path": "nano_data2016_7.root",
-    "size": 4003072605,
-    "checksum": "adler32:9d6a5a70"
+    "path": "runG12/f65.bits.bin",
+    "sha256": "0f6a0d3e4668e97e6de1c9e00e18551a4dc7dcd9daa9e78f4a1db198244fafb0"
    },
    {
-    "path": "nano_data2016_8.root",
-    "size": 3988725012,
-    "checksum": "adler32:1f7b88fd"
+    "path": "runG12/f66.bits.bin",
+    "sha256": "a4d7957fbbef6613b53a6ec13e7d89a22e76313ae6b6cde7d239dbe1359f3369"
    },
    {
-    "path": "nano_data2016_9.root",
-    "size": 4583918816,
-    "checksum": "adler32:afa39e77"
+    "path": "runG12/f67.bits.bin",
+    "sha256": "1281e9e1d93a22ad3d6cd9869e122ef65fa21b3d94f6875ac61380e377439d6b"
    }
   ]
  },
- "h_raw": "0ef787d74df3ff4b703b51d29f40c386b844c510d6d8f71587ca40dbf6851ac5",
- "data_sha256": "857c293c5665aea77c99a08e4046ec5ee06cc44f601059dc01835a5faf8c8b45",
- "created_utc": "2026-10-23T09:54:56Z"
+ "h_raw": "3e14a083730bed40d2ec161c29280bf38288fb782f54e94aa21692ab1f268aa6",
+ "data_sha256": "a7a49e0139c07faa41b7cf01337027d863f725da38244374d1af812af2677057",
+ "created_utc": "2026-10-23T11:54:36Z"
 }

@@ -24,13 +24,15 @@ this tool makes misbehavior attributable, not a lone source trustless.
 Usage:
   python3 protocol/commit.py plan --spec spec.json --out plan.json
   python3 protocol/commit.py data --round R --plan plan.json \
-      --portal-index runG/portal-file-index.json --out data.json
+      --manifests runG12 --out data.json
   python3 protocol/commit.py verify --plan plan.json --data data.json
 """
 
 import argparse
+import glob
 import hashlib
 import json
+import os
 import sys
 import time
 
@@ -73,11 +75,25 @@ def make_data(round_id, plan_sha, entries):
 
 
 def entries_from_portal(path):
+    """Portal tuple (filename, size, adler32): fetch-integrity convenience only."""
     idx = json.load(open(path))
     entries = []
     for f in idx["files"]:
         entries.append({"path": f["filename"], "size": f["size"],
                         "checksum": f["checksum"]})
+    return entries
+
+
+def entries_from_manifests(path):
+    """Collision-resistant identity: the 67 extracted bit files and their SHA256."""
+    files = sorted(glob.glob(os.path.join(path, "f[0-9][0-9].manifest.json")))
+    if len(files) != 67:
+        raise SystemExit("expected 67 manifests, found %d" % len(files))
+    entries = []
+    for f in files:
+        m = json.load(open(f))
+        entries.append({"path": m["outputs"]["bits_file"],
+                        "sha256": m["outputs"]["bits_sha256"]})
     return entries
 
 
@@ -95,10 +111,12 @@ def cmd_data(args):
     plan_sha = plan_rec["plan_sha256"]
     if args.entries:
         entries = json.load(open(args.entries))
+    elif args.manifests:
+        entries = entries_from_manifests(args.manifests)
     elif args.portal_index:
         entries = entries_from_portal(args.portal_index)
     else:
-        raise SystemExit("provide --entries or --portal-index")
+        raise SystemExit("provide --entries, --manifests, or --portal-index")
     data, h_raw, c_data = make_data(args.round, plan_sha, entries)
     rec = {"data": data, "h_raw": h_raw, "data_sha256": c_data,
            "created_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
@@ -159,6 +177,7 @@ def main():
     d.add_argument("--round", required=True)
     d.add_argument("--plan", required=True)
     d.add_argument("--entries")
+    d.add_argument("--manifests")
     d.add_argument("--portal-index")
     d.add_argument("--out", required=True)
     d.set_defaults(func=cmd_data)

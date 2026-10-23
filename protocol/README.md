@@ -28,12 +28,14 @@ The generated records:
 | field | value |
 |---|---|
 | `C_plan` | `0b8ff375e4c4b98aa1e6733a6519f65ef482d450898bd3120cf7d1a5d02da9ed` |
-| `H_RAW` | `0ef787d74df3ff4b703b51d29f40c386b844c510d6d8f71587ca40dbf6851ac5` |
-| `C_data` | `857c293c5665aea77c99a08e4046ec5ee06cc44f601059dc01835a5faf8c8b45` |
+| `H_RAW` | `3e14a083730bed40d2ec161c29280bf38288fb782f54e94aa21692ab1f268aa6` |
+| `C_data` | `a7a49e0139c07faa41b7cf01337027d863f725da38244374d1af812af2677057` |
 
-`entries` uses the portal identity: `(filename, size, adler32)` for all 67
-files (`runG/portal-file-index.json`). A production deployment can use SHA256
-of the raw bytes instead; the CLI does not enforce the checksum algorithm.
+`entries` uses the recorded product of this open-data round: the 67 extracted
+bit files and their SHA256 from the runG12 manifests. The portal tuple
+`(filename, size, adler32)` is retained as a fetch-integrity check, not as the
+commitment: adler32 is not collision-resistant. A raw-tier production round
+would hash the raw bytes with SHA256 instead.
 
 ## Usage
 
@@ -42,7 +44,7 @@ python3 protocol/commit.py plan --spec protocol/examples/phase0-b12-plan-spec.js
     --out protocol/examples/phase0-b12-plan.json
 python3 protocol/commit.py data --round phase0-b12-2026-10-19 \
     --plan protocol/examples/phase0-b12-plan.json \
-    --portal-index runG/portal-file-index.json \
+    --manifests runG12 \
     --out protocol/examples/phase0-b12-data.json
 python3 protocol/commit.py verify --plan protocol/examples/phase0-b12-plan.json \
     --data protocol/examples/phase0-b12-data.json

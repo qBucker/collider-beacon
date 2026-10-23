@@ -42,8 +42,9 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   STS flags for three independent seed salts; b=8 control also zero. The raw b=12
   stream has six flags. Details: `conditioning/RESULT-2026-10-23.md`.
 - Two-stage commitment (2026-10-23): `C_plan = 0b8ff375…` fixes the b=12 plan before
-  recording; `C_data = 857c293c…` binds the 67-file portal identity after recording;
-  `verify` passes and tamper tests fail. Details: `protocol/README.md`.
+  recording; `C_data = a7a49e01…` binds the 67-file SHA256 manifest of the extracted
+  bit streams after recording; `verify` passes and tamper tests fail. Details:
+  `protocol/README.md`.
 - Geant4 audit (2026-10-23): simplified full simulation (six Si layers + PbWO4
   calorimeter); Z→μμ peak 90.82 GeV (σ68 3.31, 2000 events), H→γγ 124.24 GeV
   (σ68 0.27, 2000 events); a 5% calibration drift shifts the peaks by
