@@ -36,6 +36,13 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   5% quantile 8.43); 67/67 files below 10. The ≥ 10-bit/event gate is a pooled-run
   statement (n ≈ 5.2M), not a per-file one. Details:
   `diagnostics/b12-perfile-2026-10-23.txt`.
+- E2 lattice-aligned alphabet (2026-10-24): the empirical 12-bit storage lattice
+  (signed phi, raw float32 bit patterns) yields S1 = 12.9409 bits/event
+  (single-stage Clopper–Pearson with Bonferroni) and S2 = 13.1349 bits/event
+  (two-stage select/certify). Synthetic zero-hypothesis ceiling 12.9857 / 13.2383;
+  computed signed floor 13.65; gain over the b=12 linear arm +1.6311 bit. Both arms
+  lie inside the pre-registered real-data bands (amendment 4); no falsification
+  condition triggered. Details: `diagnostics/lattice-result-2026-10-24.md`.
 - Stage-2 conditioning (2026-10-23): block-wise Toeplitz extraction over GF(2) with
   a SHAKE256 chained public seed and a 128-bit leftover-hash margin. Canonical
   b=12 configuration (25,000 events per block, 58 one-megabit sequences): zero NIST
@@ -64,6 +71,9 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
   and single-command runner.
 - `runG/`, `runG2/`, `refix-2026-10-16/` — evidence: per-file manifests, bit outputs,
   checksums, aggregates, round-2 sample, R3 re-verification and twin battery outputs.
+- `latticeG/` — E2 raw-phi arm: 67 per-file manifests with `lattice_sha256` and
+  extractor hashes, plus `SHA256SUMS`. The raw `*.lattice.bin` files (about 20 MB)
+  are not stored; `xrd_batch_lattice.sh` regenerates them from `uris.txt`.
 - `mc/` — Pythia8 command cards and prediction-side evidence; large `.root` files are
   excluded and are regenerated from the cards.
 - `atlas/` — cross-detector check on ATLAS Open Data: adapter, parallel-range HTTP source
@@ -71,8 +81,9 @@ J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quan
 - `predictions/` — pre-registered prediction cards, committed before official runs.
 - `diagnostics/` — symbol-level dependence and stationarity audit of the b = 8 run
   (lag-k mutual information, per-file certified h_min against the same-n uniform null,
-  block-wise MCV), the ATLAS consecutive-block stability check, and the b = 12 per-file
-  certification distribution, with result files and checksums.
+  block-wise MCV), the ATLAS consecutive-block stability check, the b = 12 per-file
+  certification distribution, and the E2 lattice-aligned entropy result, with result
+  files and checksums.
 - `conditioning/` — Stage-2 Toeplitz extraction with a chained public seed, the
   block-size/seed scan, and the NIST STS reports for the conditioned b = 12 and
   b = 8 streams.
@@ -114,6 +125,17 @@ The battery compares the twin against the frozen Python reference outputs, byte 
 | 4 | Edge cases | pT ties (first-maximum selection), NaN masking, exact bin edges (±1 ULP), ±π clamp | pass |
 | 5 | NaN-phi input | both implementations reject (Python exception; twin exit code 3) | pass |
 
+E2 lattice-aligned analysis (requires the regenerated `latticeG/*.lattice.bin`
+files; see `latticeG/` above):
+
+```bash
+python3 diagnostics/lattice_integrity.py --lattice-dir latticeG \
+  --require-complete --expected-files 67 --expected-n 5211771 \
+  --out diagnostics/lattice-integrity.json
+python3 diagnostics/lattice_alpha.py --lattice-dir latticeG \
+  --out diagnostics/lattice-alpha.json --fig diagnostics/lattice-alpha.png
+```
+
 ## Environment configuration
 
 The following settings are required; they are configured in `twin/twin_run.sh` and were
@@ -137,8 +159,9 @@ established during commissioning:
 
 Each reported number is traceable to a per-file manifest containing the run parameters,
 `code_sha256`, `bits_sha256`, and gate results. The evidence directories `runG/`,
-`runG2/`, `refix-2026-10-16/`, and `mc/` contain `SHA256SUMS` files (400 entries total).
-Verification: `cd <dir> && sha256sum -c SHA256SUMS`.
+`runG2/`, `refix-2026-10-16/`, `mc/`, `latticeG/`, and `diagnostics/` contain
+`SHA256SUMS` files. Lattice manifests pin `lattice_sha256` for files that are
+regenerated rather than stored. Verification: `cd <dir> && sha256sum -c SHA256SUMS`.
 
 Extractor revision ledger: R1 = tight-jetId bitmask test (`(jetId & 2) == 2`; round-2
 variant only). R2 = gate-label fix in `phase0_verify.py` (logic unchanged). R3 =

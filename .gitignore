@@ -18,3 +18,5 @@ lattice-sweep.log
 lattice-analysis.log
 lattice-integrity.log
 lattice-alpha.log
+lattice-parallel.log.lock
+diagnostics/lattice-integrity-partial.json
