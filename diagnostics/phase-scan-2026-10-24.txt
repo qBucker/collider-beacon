@@ -1,0 +1,43 @@
+pooled events: 5211771
+
+b=12  bins=4096  width=1.534 mrad
+  offset 0/8: h_inf=11.3098  max_count=1777
+  offset 1/8: h_inf=11.3075  max_count=1780
+  offset 2/8: h_inf=11.3265  max_count=1755
+  offset 3/8: h_inf=11.3000  max_count=1790
+  offset 4/8: h_inf=11.3113  max_count=1775
+  offset 5/8: h_inf=11.3038  max_count=1785
+  offset 6/8: h_inf=11.2859  max_count=1809
+  offset 7/8: h_inf=11.2970  max_count=1794
+  spread: 0.0406 bit
+
+b=13  bins=8192  width=0.767 mrad
+  offset 0/8: h_inf=12.1397  max_count=946
+  offset 1/8: h_inf=12.1507  max_count=938
+  offset 2/8: h_inf=12.1535  max_count=936
+  offset 3/8: h_inf=12.1577  max_count=933
+  offset 4/8: h_inf=12.1192  max_count=961
+  offset 5/8: h_inf=12.1192  max_count=961
+  offset 6/8: h_inf=12.1192  max_count=961
+  offset 7/8: h_inf=12.1563  max_count=934
+  spread: 0.0385 bit
+
+b=14  bins=16384  width=0.383 mrad
+  offset 0/8: h_inf=12.9421  max_count=503
+  offset 1/8: h_inf=12.9224  max_count=511
+  offset 2/8: h_inf=12.9224  max_count=511
+  offset 3/8: h_inf=12.9224  max_count=511
+  offset 4/8: h_inf=12.9547  max_count=498
+  offset 5/8: h_inf=12.9547  max_count=498
+  offset 6/8: h_inf=12.9421  max_count=503
+  offset 7/8: h_inf=12.9421  max_count=503
+  spread: 0.0323 bit
+  max bin: index=13405 phi=+1.9994 rad count=503 distinct_values=2
+  local density ratio (2^16 bins, +/-50): 1.029
+
+interpretation:
+  The phase spread is stable across b (0.03-0.04 bit); the b=14
+  agreement with the aligned estimate is not a bin-origin accident.
+  The b=14 maximum bin lies in |phi| in [1,2), where two stored
+  values share a bin; its two-value expected mass coincides with
+  the aligned single-atom maximum at the percent level.
