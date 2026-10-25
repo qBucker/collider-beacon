@@ -85,15 +85,10 @@ def precision_census(phi):
     if phi.size == 0:
         return None
     bits = phi.astype(np.float32).view(np.uint32)
-    mant = bits & np.uint32(0x7FFFFF)
-    tz = np.zeros_like(mant, dtype=np.int64)
-    m = mant.copy()
-    for k in range(24):
-        active = (m != 0) & ((m & 1) == 0)
-        tz[active] += 1
-        m = m >> 1
-        if not active.any():
-            break
+    mant = (bits & np.uint32(0x7FFFFF)).astype(np.uint64)
+    lowbit = mant & (~mant + np.uint64(1))
+    tz = np.where(mant == 0, 23,
+                  np.floor(np.log2(np.maximum(lowbit, 1))).astype(np.int64))
     vals, cnts = np.unique(tz, return_counts=True)
     return {"tz_histogram": {int(v): int(c) for v, c in zip(vals, cnts)},
             "fraction_tz_ge_11": float((tz >= 11).mean()),
@@ -114,6 +109,24 @@ def fourier_amplitudes(phi, b=12, kmax=24):
             "significance": {int(k): float(sig[k - 1]) for k in range(1, kmax + 1)}}
 
 
+def fold_test(phi, k, nbins=30):
+    """Post-hoc: fold the azimuth modulo 2*pi/k and report the profile."""
+    if phi.size == 0:
+        return None
+    period = 2 * math.pi / k
+    fold = np.mod(phi + math.pi, period)
+    counts, _ = np.histogram(fold, bins=nbins, range=(0.0, period))
+    n = counts.sum()
+    exp = n / nbins
+    chi2 = float(((counts - exp) ** 2).sum() / exp)
+    return {"k": k, "period_deg": 360.0 / k, "bins": nbins,
+            "chi2": chi2, "dof": nbins - 1,
+            "p": float(stats.chi2.sf(chi2, nbins - 1)),
+            "profile_over_mean": [float(c / exp) for c in counts],
+            "min_over_mean": float(counts.min() / exp),
+            "max_over_mean": float(counts.max() / exp)}
+
+
 def summarize(name, phi):
     return {
         "name": name,
@@ -122,6 +135,7 @@ def summarize(name, phi):
         "seam_ratio": seam_ratio(phi),
         "precision": precision_census(phi),
         "fourier": fourier_amplitudes(phi),
+        "fold": {str(k): fold_test(phi, k) for k in (12, 18)},
     }
 
 
@@ -172,6 +186,22 @@ def main():
                              "seam_ratio_w16": (r or {}).get("w16"),
                              "h_min_b8": (u8 or {}).get("h_min_CP_bonferroni")})
         result["terciles"] = terciles
+        # per-file Fourier stability at the storage-beat and high-order lines
+        pf = {}
+        for k in (7, 12, 18):
+            zs = []
+            for chunk in chunks:
+                if chunk.size < 1000:
+                    continue
+                f = fourier_amplitudes(chunk)
+                zs.append(f["significance"][k])
+            if zs:
+                zs = np.array(zs)
+                pf[str(k)] = {"median_z": float(np.median(zs)),
+                              "min_z": float(zs.min()), "max_z": float(zs.max()),
+                              "files": int(zs.size),
+                              "files_z_gt_3": int((zs > 3).sum())}
+        result["per_file_fourier"] = pf
         results["arms"][arm] = result
 
     tmp = args.out + ".tmp"
