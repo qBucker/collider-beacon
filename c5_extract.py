@@ -150,11 +150,11 @@ def extract_file(uri, batch):
                 py = p1[ok] * np.sin(f1[ok]) + p2[ok] * np.sin(f2[ok])
                 pair_phi = np.arctan2(py, px)
                 # invariant mass with the stored muon masses
-                e_1 = np.sqrt(p1[ok] ** 2 + m1[ok] ** 2)
-                e_2 = np.sqrt(p2[ok] ** 2 + m2[ok] ** 2)
-                pz = np.sqrt(np.maximum(e_1 ** 2 - m1[ok] ** 2, 0)) * np.sinh(e1[ok]) \
-                    + np.sqrt(np.maximum(e_2 ** 2 - m2[ok] ** 2, 0)) * np.sinh(e2[ok])
-                m2_pair = np.maximum((e_1 + e_2) ** 2 - px ** 2 - py ** 2 - pz ** 2, 0.0)
+                # E = sqrt((pT cosh eta)^2 + m^2), pz = pT sinh eta
+                big_e1 = np.sqrt((p1[ok] * np.cosh(e1[ok])) ** 2 + m1[ok] ** 2)
+                big_e2 = np.sqrt((p2[ok] * np.cosh(e2[ok])) ** 2 + m2[ok] ** 2)
+                pz = p1[ok] * np.sinh(e1[ok]) + p2[ok] * np.sinh(e2[ok])
+                m2_pair = np.maximum((big_e1 + big_e2) ** 2 - px ** 2 - py ** 2 - pz ** 2, 0.0)
                 out["dimuon_phi"].append(pair_phi.astype(np.float64))
                 out["dimuon_mass"].append(np.sqrt(m2_pair))
                 counters["dimuon"] += int(ok.sum())

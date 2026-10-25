@@ -1,0 +1,22 @@
+{
+ "files": 67,
+ "counters": {
+  "events": 27123616,
+  "muons_pass": 89408,
+  "events_ge2": 779,
+  "os_pairs": 579
+ },
+ "mass_percentiles": {
+  "min": 0.223,
+  "p5": 0.665,
+  "p25": 2.54,
+  "p50": 8.698,
+  "p75": 14.589,
+  "p95": 26.846,
+  "max": 91.914
+ },
+ "Jpsi_core_100MeV": 81,
+ "Jpsi_sideband_avg_per_100MeV": 5.0,
+ "Jpsi_hist_peak_GeV": 3.0859999656677246,
+ "Upsilon_window_n": 29
+}

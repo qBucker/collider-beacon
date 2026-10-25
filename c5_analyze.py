@@ -162,13 +162,12 @@ def main():
                          "counters": man.get("counters", {}),
                          "npz_sha256": man.get("outputs", {}).get("npz_sha256")})
         for arm in ("lead_phi", "sub_phi", "third_phi", "btag_phi",
-                    "btag080_phi", "dimuon_phi", "sv_phi"):
+                    "btag080_phi", "sv_phi"):
             if arm not in z.files:
                 continue
             arms.setdefault(arm, []).append(z[arm].astype(np.float64))
 
-    results = {"generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-               "files": len(files),
+    results = {"files": len(files),
                "counters": counters_total,
                "arms": {},
                "per_file": per_file}

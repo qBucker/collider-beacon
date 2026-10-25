@@ -1,0 +1,33 @@
+{
+ "experiment": "C5 hadronic extension",
+ "card": "predictions/2026-10-25-c5-hadronic.md",
+ "source_uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-7.root",
+ "params": {
+  "jet_pt_min": 20.0,
+  "jet_eta_max": 2.5,
+  "btag_primary": 0.5,
+  "btag_secondary": 0.8,
+  "muon_pt_min": 4.0,
+  "muon_eta_max": 2.4,
+  "batch": 50000
+ },
+ "counters": {
+  "events": 146080,
+  "lead": 28420,
+  "sub": 6932,
+  "third": 1446,
+  "btag050": 583,
+  "btag080": 242,
+  "dimuon": 3,
+  "jets_pass": 37148,
+  "muons_pass": 475,
+  "sv": 25128
+ },
+ "outputs": {
+  "npz": "f07.npz",
+  "npz_sha256": "ffbb2875df5f6e3f1e87320b47ae7dd7833f2261a254c9ee19e96ee20de90eb9"
+ },
+ "code_sha256": "0d1d8b85fece310ae6e08b801e24dbda0fbec20e34edbf877fa0a5cbff2ae37e",
+ "wall_time_s": 58.04,
+ "timestamp_utc": "2026-10-25T04:00:50Z"
+}

@@ -1,0 +1,18 @@
+{
+ "experiment": "C5 dimuon arm (corrected four-vector)",
+ "card": "predictions/2026-10-25-c5-hadronic.md",
+ "source_uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_54.root",
+ "counters": {
+  "events": 497258,
+  "muons_pass": 1817,
+  "events_ge2": 13,
+  "os_pairs": 10
+ },
+ "outputs": {
+  "npz": "f58.npz",
+  "npz_sha256": "c185e605e553fab1810eb009643aa79f372a6f33fa89f699fdac8a94e5976bf5"
+ },
+ "code_sha256": "3a5b1a06f9335c61e01cf78f97b3398325d561dfc09f2f1c8ac5be45f92bc727",
+ "wall_time_s": 24.05,
+ "timestamp_utc": "2026-10-25T17:53:45Z"
+}
