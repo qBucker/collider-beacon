@@ -20,3 +20,7 @@ lattice-integrity.log
 lattice-alpha.log
 lattice-parallel.log.lock
 diagnostics/lattice-integrity-partial.json
+c5G/*.npz
+c5G/*.tmp
+c5-batch.log
+c5-sweep.log
