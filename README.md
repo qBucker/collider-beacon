@@ -7,7 +7,7 @@ CMS Open Data to audited random bits, including a bit-identical dual implementat
 
 ## Citation
 
-J. Zhu, *The Collider Beacon: Certified Public Randomness from Symmetry and Quantum Measurement*, Zenodo preprint (2026). Version DOI [10.5281/zenodo.23434446](https://doi.org/10.5281/zenodo.23434446); concept DOI [10.5281/zenodo.23434445](https://doi.org/10.5281/zenodo.23434445).
+J. Zhu, *Precision and Detector Fingerprints in Public Collider Data: An Azimuthal-Uniformity Audit of CMS and ATLAS Open Data*, Zenodo preprint (2026). Version DOI [10.5281/zenodo.23632595](https://doi.org/10.5281/zenodo.23632595); concept DOI [10.5281/zenodo.23434445](https://doi.org/10.5281/zenodo.23434445). Earlier version: *The Collider Beacon: Certified Public Randomness from Symmetry and Quantum Measurement* ([10.5281/zenodo.23434446](https://doi.org/10.5281/zenodo.23434446)).
 
 ## Measured results (2026-10-16)
 
