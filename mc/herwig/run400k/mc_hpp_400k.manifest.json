@@ -2,8 +2,8 @@
   "extractor": "P v1: leading jet (max pT, |eta|<2.5, pT>20 GeV) -> phi -> 2^b uniform bins, MSB-first",
   "params": {
     "files": null,
-    "mc": "/home/shuix/projects/deepseekharness/beacon-paper/phase0/mc/herwig/run400k/herwig_delphes_400k.root",
-    "out": "/home/shuix/projects/deepseekharness/beacon-paper/phase0/mc/herwig/run400k/mc_hpp_400k",
+    "mc": "mc/herwig/run400k/herwig_delphes_400k.root",
+    "out": "mc/herwig/run400k/mc_hpp_400k",
     "b": 8,
     "pt_min": 20.0,
     "eta_max": 2.5,
@@ -14,7 +14,7 @@
   },
   "files": [
     {
-      "path": "/home/shuix/projects/deepseekharness/beacon-paper/phase0/mc/herwig/run400k/herwig_delphes_400k.root",
+      "path": "mc/herwig/run400k/herwig_delphes_400k.root",
       "size": 10281525040,
       "sha256": "070a5a0d18b54da0f6f3cfe2be32c939ac494723c3a26f19eb66173ea5b2de53"
     }
@@ -36,7 +36,7 @@
     "total_min_entropy_bits_lower_bound": 35309.04686331194
   },
   "outputs": {
-    "bits_file": "/home/shuix/projects/deepseekharness/beacon-paper/phase0/mc/herwig/run400k/mc_hpp_400k.bits.bin",
+    "bits_file": "mc/herwig/run400k/mc_hpp_400k.bits.bin",
     "bits_sha256": "b915ef7e6a98572c7e46362121a1c892962dcdb5cd91d64e7a1419e560cb4ae3"
   },
   "code_sha256": "9272d4dfb2d420cb7cc46ef156c6f179161da8c023b11d34fa76b9c48f4d1f3e",

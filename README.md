@@ -161,7 +161,10 @@ Each reported number is traceable to a per-file manifest containing the run para
 `code_sha256`, `bits_sha256`, and gate results. The evidence directories `runG/`,
 `runG2/`, `refix-2026-10-16/`, `mc/`, `latticeG/`, and `diagnostics/` contain
 `SHA256SUMS` files. Lattice manifests pin `lattice_sha256` for files that are
-regenerated rather than stored. Verification: `cd <dir> && sha256sum -c SHA256SUMS`.
+regenerated rather than stored. Verification: `cd <dir> && sha256sum -c SHA256SUMS`
+(`protocol/SHA256SUMS` uses repository-root paths and is verified from the root).
+Paths inside retained tool outputs and manifests are relative to the repository root;
+`data/` denotes the local input-data directory, which is not stored here.
 
 Extractor revision ledger: R1 = tight-jetId bitmask test (`(jetId & 2) == 2`; round-2
 variant only). R2 = gate-label fix in `phase0_verify.py` (logic unchanged). R3 =
@@ -169,6 +172,13 @@ parameter-derived manifest description string; default `--pt-min` = 20.0. The al
 unchanged across R1–R3; re-verified bit-for-bit (`refix-2026-10-16/f01.bits.bin` matches
 `runG/f01.bits.bin`, sha256 `6bc096b7…`). `code_sha256` lineage: round-1 manifests
 `f8622c70…` (frozen bytes: `phase0_extract_legacy-f8622c70.py`); current `9272d4df…`.
+
+Evidence ledger: R4 = path normalization (2026-10-26). Local absolute paths in 18 tracked
+evidence files (21 lines: NIST STS reports and `freq.txt`, two `.sha256` files, two
+manifests, two precision-anchor outputs) were replaced by repository-relative paths.
+Payload hashes, numeric results and all manifest fields other than path strings are
+unchanged; the affected `SHA256SUMS` files were recomputed (conditioning 8, runG 3,
+diagnostics 1, mc/herwig/run400k 1 entries).
 
 Input data: CMS Open Data (CC0-1.0). Large input files are not stored in this repository.
 

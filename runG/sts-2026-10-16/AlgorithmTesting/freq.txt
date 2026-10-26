@@ -1,6 +1,6 @@
 ________________________________________________________________________________
 
-		FILE = /home/shuix/projects/deepseekharness/beacon-paper/phase0/runG/sts-2026-10-16/sts_input_41M.bin		ALPHA = 0.0100
+		FILE = runG/sts-2026-10-16/sts_input_41M.bin		ALPHA = 0.0100
 ________________________________________________________________________________
 
 		BITSREAD = 1000000 0s = 500324 1s = 499676

@@ -348,8 +348,8 @@ abccd112e2642a97b37c18866d053baa81b5d3fa36771a6d39acb42eb2ccd5f7  ./sts-2026-10-
 1b0b2b945ab9d05d8366b0cf919b214a49fbcd453a16e7e8dcdba68bcd3b2083  ./sts-2026-10-16/AlgorithmTesting/Serial/stats.txt
 e87e2b6097ac438cc606dac383491a0b7f8abe512e0407f6d4c871e621a24be6  ./sts-2026-10-16/AlgorithmTesting/Universal/results.txt
 0154a65a58a3d875ee23b83729b27a4703fbaf724b0e032d816c3658cd14db95  ./sts-2026-10-16/AlgorithmTesting/Universal/stats.txt
-bd8c8ebc4a0188bbb596a9f82b85494f98302055d7f2c5a2595b7b4ea648d59f  ./sts-2026-10-16/AlgorithmTesting/finalAnalysisReport.txt
-83e65e891ff1342d0702d59d06a7f3cfdd7ccd874ab10da07e78f1b0bc95fa2c  ./sts-2026-10-16/AlgorithmTesting/freq.txt
+9907dcba37ab8e2c922efa4f63d3e4798b30cbb1cc90f6953e717172007e2ed2  ./sts-2026-10-16/AlgorithmTesting/finalAnalysisReport.txt
+c04459c609487e31e680e344748eac8475ed45f8266684ed6da318b602cc55b0  ./sts-2026-10-16/AlgorithmTesting/freq.txt
 b17dde69aa11c7abe9615ffd93fa7f5dc90c8044b28e18588451324a6ceeda35  ./sts-2026-10-16/assess-console.log
 0de8314be13c3ec3f156f4d589332d5caf8ad15e5a84cbb73ce101725be6a3d3  ./sts-2026-10-16/sts_input_41M.bin
-15a99e429e1993497808c3a9be05f835cdabf7ea04fafe44db4d61c10163eb0b  ./sts-2026-10-16/sts_input_41M.sha256
+3061d8c60cf4b70d12348cdc25ba28689f0dccc3a94cd9c3bc591c452c313f59  ./sts-2026-10-16/sts_input_41M.sha256

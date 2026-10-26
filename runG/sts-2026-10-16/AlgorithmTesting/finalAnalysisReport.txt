@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------
 RESULTS FOR THE UNIFORMITY OF P-VALUES AND THE PROPORTION OF PASSING SEQUENCES
 ------------------------------------------------------------------------------
-   generator is </home/shuix/projects/deepseekharness/beacon-paper/phase0/runG/sts-2026-10-16/sts_input_41M.bin>
+   generator is <runG/sts-2026-10-16/sts_input_41M.bin>
 ------------------------------------------------------------------------------
  C1  C2  C3  C4  C5  C6  C7  C8  C9 C10  P-VALUE  PROPORTION  STATISTICAL TEST
 ------------------------------------------------------------------------------

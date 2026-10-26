@@ -56,3 +56,7 @@
   precision.
 - Seeds 20261101-20261108 (8 x 50,000); generator 198.7 s per chunk, Delphes 85.5 s per
   chunk, merge 21 s, extraction 60 s. Evidence: `mc/herwig/run400k/`.
+- 2026-10-26 (R4): path fields in this manifest were normalized to repository-relative
+  paths; the payload hashes above are unchanged. The manifest now hashes to
+  `15c617068b88d38ac9fd3e8207f5d7f46af91bd2e27f391129339c651a43e175` (previous
+  `56bfef1b…` retained above as the as-run record). See the R4 ledger entry in `README.md`.

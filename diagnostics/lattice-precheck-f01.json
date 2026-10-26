@@ -1,5 +1,5 @@
 {
- "root": "/home/shuix/projects/deepseekharness/beacon-paper/phase0/data/nano_data2016_1-1.root",
+ "root": "data/nano_data2016_1-1.root",
  "events_seen": 153011,
  "leading_jets": 23006,
  "alphabet_distinct": 15066,

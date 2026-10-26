@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------
 RESULTS FOR THE UNIFORMITY OF P-VALUES AND THE PROPORTION OF PASSING SEQUENCES
 ------------------------------------------------------------------------------
-   generator is </home/shuix/projects/deepseekharness/collider-beacon/conditioning/out/b12-toeplitz-50000-s1.bits.bin>
+   generator is <conditioning/out/b12-toeplitz-50000-s1.bits.bin>
 ------------------------------------------------------------------------------
  C1  C2  C3  C4  C5  C6  C7  C8  C9 C10  P-VALUE  PROPORTION  STATISTICAL TEST
 ------------------------------------------------------------------------------
