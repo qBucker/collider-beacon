@@ -28,3 +28,7 @@ muonG/*.npz
 muonG/*.tmp
 muon-batch.log
 c5-f64.log
+b5G/*.npz
+b5G/*.tmp
+b5-batch.log
+b5-sweep.log
