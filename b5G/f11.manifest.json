@@ -1,0 +1,24 @@
+{
+ "experiment": "B5 secondary-vertex stratification",
+ "card": "predictions/2026-10-27-b5-sv-stratified.md",
+ "source_uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_10.root",
+ "params": {
+  "jet_pt_min": 20.0,
+  "jet_eta_max": 2.5,
+  "batch": 50000
+ },
+ "counters": {
+  "events": 495935,
+  "sv": 95326,
+  "sv_chi2_invalid": 855,
+  "jets_pass": 147213,
+  "lead": 110342
+ },
+ "outputs": {
+  "npz": "f11.npz",
+  "npz_sha256": "952cbe12306eefbab81c794c95341d5cc7d3f765735296bb0fd5d6c0c42a7ab6"
+ },
+ "code_sha256": "1083c1470d3d97624908fdc5926e64257a08669dace04be752fe307835042b4f",
+ "wall_time_s": 456.06,
+ "timestamp_utc": "2026-10-27T07:31:14Z"
+}
