@@ -103,3 +103,19 @@ mechanism statement is downgraded (see Falsifiers).
 ## Amendments
 
 (none before the run)
+
+### Amendment 1 — 2026-10-28, before the crossmatch run
+
+The parent-file identification rule in "Data" assumed an index-contiguous
+relation between PFNano and MiniAOD files. The f01 file is a re-chunked merge:
+153,011 events spanning six runs (278822-279794) and 257 luminosity sections,
+i.e. it draws events from many MiniAOD files in a non-chronological order. The
+first MiniAOD file tested (50000/00C7CA02...) shares no events with f01 (exact
+event-ID intersection, 0 of 153,011).
+
+The parent set is therefore defined as the set of MiniAOD files that contain at
+least one f01 event, determined by exact event-ID intersection. The crossmatch
+is performed on the files processed in index order until the matched-jet gate
+(G4, >= 1e5 matched jets) is met; the event-match rate (P1) is evaluated over
+the processed events and reported together with the number of files processed.
+The jet matching and the four candidate storage rules are unchanged.
