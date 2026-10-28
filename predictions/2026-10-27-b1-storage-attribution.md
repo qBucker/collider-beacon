@@ -119,3 +119,25 @@ is performed on the files processed in index order until the matched-jet gate
 (G4, >= 1e5 matched jets) is met; the event-match rate (P1) is evaluated over
 the processed events and reported together with the number of files processed.
 The jet matching and the four candidate storage rules are unchanged.
+
+### Amendment 2 — 2026-10-28, before the re-run
+
+The first crossmatch pass found that 82% of matched events have different jet
+counts between the two products. A content comparison on matched events shows
+that the PFNano jet table stores only jets above a threshold: the smallest kept
+jet in 30 examined events is 15.080 GeV and the largest dropped jet is
+14.873 GeV. The PFNano jet collection is therefore the MiniAOD `slimmedJets`
+collection with a pT > 15 GeV selection applied.
+
+The matching now applies the same pT > 15 GeV selection to the MiniAOD jets
+before the per-event count comparison. This is the "documented selection"
+branch of the P2 decision rule: the selection is reported (threshold interval
+[14.873, 15.080] GeV) and the per-event count agreement is re-measured on the
+selected collections. The jet matching (index inside the event) and the four
+candidate storage rules are unchanged.
+
+The first pass also produced a rule result on the 5,401 jets from equal-count
+events (events without a below-threshold jet): R2_mant_round to 10 explicit
+bits for Jet_pt and Jet_mass (99.8%), to 12 explicit bits for Jet_eta (100%)
+and Jet_phi (99.94%). That result is retained as a consistency check for the
+re-run and is not used to select the rule.
