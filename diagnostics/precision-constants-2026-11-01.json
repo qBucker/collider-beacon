@@ -1,0 +1,780 @@
+{
+ "date": "2026-11-01",
+ "n_files": 67,
+ "keys": [
+  "lead_phi",
+  "sv_phi"
+ ],
+ "b_candidates": [
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16
+ ],
+ "atlas": {
+  "status": "pending (raw jet_phi not stored in the smoke products)"
+ },
+ "keys_out": [
+  {
+   "key": "lead_phi",
+   "n": 5211771,
+   "files": [
+    {
+     "file": "f01.npz",
+     "n": 23006
+    },
+    {
+     "file": "f02.npz",
+     "n": 34023
+    },
+    {
+     "file": "f03.npz",
+     "n": 30921
+    },
+    {
+     "file": "f04.npz",
+     "n": 17862
+    },
+    {
+     "file": "f05.npz",
+     "n": 25535
+    },
+    {
+     "file": "f06.npz",
+     "n": 20120
+    },
+    {
+     "file": "f07.npz",
+     "n": 28420
+    },
+    {
+     "file": "f08.npz",
+     "n": 35173
+    },
+    {
+     "file": "f09.npz",
+     "n": 5418
+    },
+    {
+     "file": "f10.npz",
+     "n": 75798
+    },
+    {
+     "file": "f11.npz",
+     "n": 110342
+    },
+    {
+     "file": "f12.npz",
+     "n": 81113
+    },
+    {
+     "file": "f13.npz",
+     "n": 70929
+    },
+    {
+     "file": "f14.npz",
+     "n": 83382
+    },
+    {
+     "file": "f15.npz",
+     "n": 57601
+    },
+    {
+     "file": "f16.npz",
+     "n": 91956
+    },
+    {
+     "file": "f17.npz",
+     "n": 107865
+    },
+    {
+     "file": "f18.npz",
+     "n": 114926
+    },
+    {
+     "file": "f19.npz",
+     "n": 89721
+    },
+    {
+     "file": "f20.npz",
+     "n": 103898
+    },
+    {
+     "file": "f21.npz",
+     "n": 82606
+    },
+    {
+     "file": "f22.npz",
+     "n": 93449
+    },
+    {
+     "file": "f23.npz",
+     "n": 109175
+    },
+    {
+     "file": "f24.npz",
+     "n": 90378
+    },
+    {
+     "file": "f25.npz",
+     "n": 74929
+    },
+    {
+     "file": "f26.npz",
+     "n": 91206
+    },
+    {
+     "file": "f27.npz",
+     "n": 91471
+    },
+    {
+     "file": "f28.npz",
+     "n": 83626
+    },
+    {
+     "file": "f29.npz",
+     "n": 77156
+    },
+    {
+     "file": "f30.npz",
+     "n": 119239
+    },
+    {
+     "file": "f31.npz",
+     "n": 84746
+    },
+    {
+     "file": "f32.npz",
+     "n": 68315
+    },
+    {
+     "file": "f33.npz",
+     "n": 87043
+    },
+    {
+     "file": "f34.npz",
+     "n": 96555
+    },
+    {
+     "file": "f35.npz",
+     "n": 89507
+    },
+    {
+     "file": "f36.npz",
+     "n": 110401
+    },
+    {
+     "file": "f37.npz",
+     "n": 94919
+    },
+    {
+     "file": "f38.npz",
+     "n": 79380
+    },
+    {
+     "file": "f39.npz",
+     "n": 90336
+    },
+    {
+     "file": "f40.npz",
+     "n": 105652
+    },
+    {
+     "file": "f41.npz",
+     "n": 99646
+    },
+    {
+     "file": "f42.npz",
+     "n": 96856
+    },
+    {
+     "file": "f43.npz",
+     "n": 88678
+    },
+    {
+     "file": "f44.npz",
+     "n": 95695
+    },
+    {
+     "file": "f45.npz",
+     "n": 28528
+    },
+    {
+     "file": "f46.npz",
+     "n": 2248
+    },
+    {
+     "file": "f47.npz",
+     "n": 111469
+    },
+    {
+     "file": "f48.npz",
+     "n": 128982
+    },
+    {
+     "file": "f49.npz",
+     "n": 2925
+    },
+    {
+     "file": "f50.npz",
+     "n": 84486
+    },
+    {
+     "file": "f51.npz",
+     "n": 79387
+    },
+    {
+     "file": "f52.npz",
+     "n": 85381
+    },
+    {
+     "file": "f53.npz",
+     "n": 38828
+    },
+    {
+     "file": "f54.npz",
+     "n": 69881
+    },
+    {
+     "file": "f55.npz",
+     "n": 84782
+    },
+    {
+     "file": "f56.npz",
+     "n": 62144
+    },
+    {
+     "file": "f57.npz",
+     "n": 98075
+    },
+    {
+     "file": "f58.npz",
+     "n": 102884
+    },
+    {
+     "file": "f59.npz",
+     "n": 103784
+    },
+    {
+     "file": "f60.npz",
+     "n": 54561
+    },
+    {
+     "file": "f61.npz",
+     "n": 100585
+    },
+    {
+     "file": "f62.npz",
+     "n": 92782
+    },
+    {
+     "file": "f63.npz",
+     "n": 74722
+    },
+    {
+     "file": "f64.npz",
+     "n": 94213
+    },
+    {
+     "file": "f65.npz",
+     "n": 95316
+    },
+    {
+     "file": "f66.npz",
+     "n": 98600
+    },
+    {
+     "file": "f67.npz",
+     "n": 108235
+    }
+   ],
+   "octaves": {
+    "-8": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4576,
+     "step": 9.5367431640625e-07,
+     "median_diff": 9.5367431640625e-07
+    },
+    "-7": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 6620,
+     "step": 1.9073486328125e-06,
+     "median_diff": 1.9073486328125e-06
+    },
+    "-6": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 7895,
+     "step": 3.814697265625e-06,
+     "median_diff": 3.814697265625e-06
+    },
+    "-5": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8183,
+     "step": 7.62939453125e-06,
+     "median_diff": 7.62939453125e-06
+    },
+    "-4": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8191,
+     "step": 1.52587890625e-05,
+     "median_diff": 1.52587890625e-05
+    },
+    "-3": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 3.0517578125e-05,
+     "median_diff": 3.0517578125e-05
+    },
+    "-2": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 6.103515625e-05,
+     "median_diff": 6.103515625e-05
+    },
+    "-1": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 0.0001220703125,
+     "median_diff": 0.0001220703125
+    },
+    "0": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 0.000244140625,
+     "median_diff": 0.000244140625
+    },
+    "1": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4678,
+     "step": 0.00048828125,
+     "median_diff": 0.00048828125
+    }
+   },
+   "b_global": 12,
+   "n_octaves_used": 10
+  },
+  {
+   "key": "sv_phi",
+   "n": 4468841,
+   "files": [
+    {
+     "file": "f01.npz",
+     "n": 21066
+    },
+    {
+     "file": "f02.npz",
+     "n": 29614
+    },
+    {
+     "file": "f03.npz",
+     "n": 26666
+    },
+    {
+     "file": "f04.npz",
+     "n": 15697
+    },
+    {
+     "file": "f05.npz",
+     "n": 22235
+    },
+    {
+     "file": "f06.npz",
+     "n": 19059
+    },
+    {
+     "file": "f07.npz",
+     "n": 25128
+    },
+    {
+     "file": "f08.npz",
+     "n": 31121
+    },
+    {
+     "file": "f09.npz",
+     "n": 5053
+    },
+    {
+     "file": "f10.npz",
+     "n": 65980
+    },
+    {
+     "file": "f11.npz",
+     "n": 95326
+    },
+    {
+     "file": "f12.npz",
+     "n": 62608
+    },
+    {
+     "file": "f13.npz",
+     "n": 55594
+    },
+    {
+     "file": "f14.npz",
+     "n": 70703
+    },
+    {
+     "file": "f15.npz",
+     "n": 46443
+    },
+    {
+     "file": "f16.npz",
+     "n": 79365
+    },
+    {
+     "file": "f17.npz",
+     "n": 93598
+    },
+    {
+     "file": "f18.npz",
+     "n": 99001
+    },
+    {
+     "file": "f19.npz",
+     "n": 77108
+    },
+    {
+     "file": "f20.npz",
+     "n": 89681
+    },
+    {
+     "file": "f21.npz",
+     "n": 73022
+    },
+    {
+     "file": "f22.npz",
+     "n": 81643
+    },
+    {
+     "file": "f23.npz",
+     "n": 93793
+    },
+    {
+     "file": "f24.npz",
+     "n": 79541
+    },
+    {
+     "file": "f25.npz",
+     "n": 64664
+    },
+    {
+     "file": "f26.npz",
+     "n": 80160
+    },
+    {
+     "file": "f27.npz",
+     "n": 80053
+    },
+    {
+     "file": "f28.npz",
+     "n": 72451
+    },
+    {
+     "file": "f29.npz",
+     "n": 67952
+    },
+    {
+     "file": "f30.npz",
+     "n": 102464
+    },
+    {
+     "file": "f31.npz",
+     "n": 71072
+    },
+    {
+     "file": "f32.npz",
+     "n": 56665
+    },
+    {
+     "file": "f33.npz",
+     "n": 77178
+    },
+    {
+     "file": "f34.npz",
+     "n": 84994
+    },
+    {
+     "file": "f35.npz",
+     "n": 79571
+    },
+    {
+     "file": "f36.npz",
+     "n": 93371
+    },
+    {
+     "file": "f37.npz",
+     "n": 83855
+    },
+    {
+     "file": "f38.npz",
+     "n": 70811
+    },
+    {
+     "file": "f39.npz",
+     "n": 79812
+    },
+    {
+     "file": "f40.npz",
+     "n": 89370
+    },
+    {
+     "file": "f41.npz",
+     "n": 83963
+    },
+    {
+     "file": "f42.npz",
+     "n": 89653
+    },
+    {
+     "file": "f43.npz",
+     "n": 73120
+    },
+    {
+     "file": "f44.npz",
+     "n": 84282
+    },
+    {
+     "file": "f45.npz",
+     "n": 25146
+    },
+    {
+     "file": "f46.npz",
+     "n": 2161
+    },
+    {
+     "file": "f47.npz",
+     "n": 95598
+    },
+    {
+     "file": "f48.npz",
+     "n": 109633
+    },
+    {
+     "file": "f49.npz",
+     "n": 2576
+    },
+    {
+     "file": "f50.npz",
+     "n": 72527
+    },
+    {
+     "file": "f51.npz",
+     "n": 62779
+    },
+    {
+     "file": "f52.npz",
+     "n": 74206
+    },
+    {
+     "file": "f53.npz",
+     "n": 31899
+    },
+    {
+     "file": "f54.npz",
+     "n": 57854
+    },
+    {
+     "file": "f55.npz",
+     "n": 66053
+    },
+    {
+     "file": "f56.npz",
+     "n": 44914
+    },
+    {
+     "file": "f57.npz",
+     "n": 88271
+    },
+    {
+     "file": "f58.npz",
+     "n": 89728
+    },
+    {
+     "file": "f59.npz",
+     "n": 91533
+    },
+    {
+     "file": "f60.npz",
+     "n": 46575
+    },
+    {
+     "file": "f61.npz",
+     "n": 86495
+    },
+    {
+     "file": "f62.npz",
+     "n": 80050
+    },
+    {
+     "file": "f63.npz",
+     "n": 61448
+    },
+    {
+     "file": "f64.npz",
+     "n": 80176
+    },
+    {
+     "file": "f65.npz",
+     "n": 81983
+    },
+    {
+     "file": "f66.npz",
+     "n": 80074
+    },
+    {
+     "file": "f67.npz",
+     "n": 92656
+    }
+   ],
+   "octaves": {
+    "-8": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4178,
+     "step": 9.5367431640625e-07,
+     "median_diff": 9.5367431640625e-07
+    },
+    "-7": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 6175,
+     "step": 1.9073486328125e-06,
+     "median_diff": 1.9073486328125e-06
+    },
+    "-6": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 7722,
+     "step": 3.814697265625e-06,
+     "median_diff": 3.814697265625e-06
+    },
+    "-5": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8168,
+     "step": 7.62939453125e-06,
+     "median_diff": 7.62939453125e-06
+    },
+    "-4": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 1.52587890625e-05,
+     "median_diff": 1.52587890625e-05
+    },
+    "-3": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 3.0517578125e-05,
+     "median_diff": 3.0517578125e-05
+    },
+    "-2": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 6.103515625e-05,
+     "median_diff": 6.103515625e-05
+    },
+    "-1": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 0.0001220703125,
+     "median_diff": 0.0001220703125
+    },
+    "0": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192,
+     "step": 0.000244140625,
+     "median_diff": 0.000244140625
+    },
+    "1": {
+     "b": 12,
+     "mean_residual": 0.0,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4678,
+     "step": 0.00048828125,
+     "median_diff": 0.00048828125
+    }
+   },
+   "b_global": 12,
+   "n_octaves_used": 10
+  }
+ ],
+ "synthetic": {
+  "-2": {
+   "b": 12,
+   "mean_residual": 0.0,
+   "on_grid_fraction": 1.0,
+   "n_unique": 8194,
+   "step": 6.103515625e-05
+  },
+  "-1": {
+   "b": 12,
+   "mean_residual": 0.0,
+   "on_grid_fraction": 1.0,
+   "n_unique": 8194,
+   "step": 0.0001220703125
+  },
+  "0": {
+   "b": 12,
+   "mean_residual": 0.0,
+   "on_grid_fraction": 1.0,
+   "n_unique": 8194,
+   "step": 0.000244140625
+  },
+  "1": {
+   "b": 12,
+   "mean_residual": 0.0,
+   "on_grid_fraction": 1.0,
+   "n_unique": 4678,
+   "step": 0.00048828125
+  }
+ },
+ "derived": {
+  "b_global": 12,
+  "u_e1": 0.00048828125,
+  "delta_uniform_b12": 0.0015339807878856412,
+  "ratio_delta_over_u1": 3.141592653589793,
+  "log2_ratio": 1.6514961294723187,
+  "pi": 3.141592653589793,
+  "log2_pi": 1.6514961294723187
+ },
+ "wall_s": 0.7
+}
