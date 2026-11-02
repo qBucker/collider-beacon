@@ -1,0 +1,35 @@
+{
+ "date": "2026-11-02",
+ "n": 5211771,
+ "scenarios": {
+  "T5_mixed_per_octave_truncation": {
+   "b_global": 12,
+   "octave_0": {
+    "b": 11,
+    "on_grid_fraction": 1.0,
+    "n_unique": 4096
+   },
+   "octave_1": {
+    "b": 10,
+    "on_grid_fraction": 1.0,
+    "n_unique": 1170
+   },
+   "octave_2": null
+  },
+  "T6_localized_uniform_quantizer": {
+   "b_global": 12,
+   "octave_0": {
+    "b": 12,
+    "on_grid_fraction": 1.0,
+    "n_unique": 8192
+   },
+   "octave_1": {
+    "b": 16,
+    "on_grid_fraction": 0.008741258741258742,
+    "n_unique": 1144,
+    "no_pass_in_range": true
+   },
+   "octave_2": null
+  }
+ }
+}
