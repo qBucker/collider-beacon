@@ -1,0 +1,72 @@
+{
+ "seed": 20261102,
+ "events_per_file": 50000,
+ "files": [
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodD.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodE.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodF.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodG.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodH.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data15_periodJ.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodA.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodB.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodC.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodD.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodE.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodF.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodG.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodI.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodK.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  },
+  {
+   "url": "https://opendata.cern.ch/eos/opendata/atlas/rucio/user/egramsta/data16_periodL.noskim.root",
+   "error": "SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')"
+  }
+ ],
+ "wall_s": 9.7,
+ "n": 0
+}

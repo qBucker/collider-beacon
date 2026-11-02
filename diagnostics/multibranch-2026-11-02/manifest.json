@@ -1,0 +1,197 @@
+{
+ "index": "portal-file-index.json",
+ "files": [
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-1.root",
+   "counts": {
+    "MET_phi": 153011,
+    "Muon_phi": 6475,
+    "Electron_phi": 4396
+   },
+   "wall_s": 6.0
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-2.root",
+   "counts": {
+    "MET_phi": 153398,
+    "Muon_phi": 10411,
+    "Electron_phi": 6651
+   },
+   "wall_s": 6.1
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_10.root",
+   "counts": {
+    "MET_phi": 495935,
+    "Muon_phi": 33469,
+    "Electron_phi": 21501
+   },
+   "wall_s": 22.6
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_11.root",
+   "counts": {
+    "MET_phi": 447563,
+    "Muon_phi": 22105,
+    "Electron_phi": 13603
+   },
+   "wall_s": 10.7
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_12.root",
+   "counts": {
+    "MET_phi": 510228,
+    "Muon_phi": 19706,
+    "Electron_phi": 12062
+   },
+   "wall_s": 12.7
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_13.root",
+   "counts": {
+    "MET_phi": 472431,
+    "Muon_phi": 26131,
+    "Electron_phi": 16152
+   },
+   "wall_s": 8.3
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_14.root",
+   "counts": {
+    "MET_phi": 510218,
+    "Muon_phi": 15902,
+    "Electron_phi": 9991
+   },
+   "wall_s": 13.2
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_15.root",
+   "counts": {
+    "MET_phi": 488311,
+    "Muon_phi": 28089,
+    "Electron_phi": 17500
+   },
+   "wall_s": 6.5
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_16.root",
+   "counts": {
+    "MET_phi": 494921,
+    "Muon_phi": 32981,
+    "Electron_phi": 21071
+   },
+   "wall_s": 13.6
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_17.root",
+   "counts": {
+    "MET_phi": 494945,
+    "Muon_phi": 35286,
+    "Electron_phi": 22066
+   },
+   "wall_s": 11.5
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_18.root",
+   "counts": {
+    "MET_phi": 401439,
+    "Muon_phi": 27929,
+    "Electron_phi": 17209
+   },
+   "wall_s": 8.9
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_19.root",
+   "counts": {
+    "MET_phi": 495492,
+    "Muon_phi": 31794,
+    "Electron_phi": 20215
+   },
+   "wall_s": 132.3
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_1-3.root",
+   "counts": {
+    "MET_phi": 149841,
+    "Muon_phi": 9502,
+    "Electron_phi": 6007
+   },
+   "wall_s": 18.7
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_2.root",
+   "counts": {
+    "MET_phi": 536187,
+    "Muon_phi": 24197,
+    "Electron_phi": 15834
+   },
+   "wall_s": 26.8
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_20.root",
+   "counts": {
+    "MET_phi": 462550,
+    "Muon_phi": 28293,
+    "Electron_phi": 18044
+   },
+   "wall_s": 7.2
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_21.root",
+   "counts": {
+    "MET_phi": 497071,
+    "Muon_phi": 33524,
+    "Electron_phi": 21336
+   },
+   "wall_s": 11.1
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_22.root",
+   "counts": {
+    "MET_phi": 493719,
+    "Muon_phi": 26667,
+    "Electron_phi": 17395
+   },
+   "wall_s": 11.6
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_23.root",
+   "counts": {
+    "MET_phi": 338977,
+    "Muon_phi": 23140,
+    "Electron_phi": 14577
+   },
+   "wall_s": 15.4
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_24.root",
+   "counts": {
+    "MET_phi": 501022,
+    "Muon_phi": 26921,
+    "Electron_phi": 17411
+   },
+   "wall_s": 27.8
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/ZeroBias/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240212_182529/0000/nano_data2016_25.root",
+   "counts": {
+    "MET_phi": 494910,
+    "Muon_phi": 27420,
+    "Electron_phi": 17662
+   },
+   "wall_s": 75.5
+  }
+ ],
+ "branches": {
+  "MET_phi": {
+   "n": 8592169
+  },
+  "Muon_phi": {
+   "n": 489942
+  },
+  "Electron_phi": {
+   "n": 310683
+  }
+ },
+ "wall_s": 446.9
+}
