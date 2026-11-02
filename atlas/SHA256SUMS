@@ -1,6 +1,7 @@
 2bb893b0b5c2e9e15b21e06dcc0ce11b9b5ddd1ab1a2bee4c021303d5c9580b7  ./README.md
 cac5ed2db37da16171f546d7f749d0c87c50d796df5706b9fa2d2c82ea474b59  ./RESULTS-2026-10-17.md
 0bb5a48335de01f448fc9a7b41f6fb231700796d7f08db50fff030a6f89422cf  ./atlas_extract.py
+75950164d34c1718462d6236489aeab68c1faec9459dbd7e09c1029784866da4  ./atlas_resample.py
 03ca7c954d5c53622a4ddf492df60ef7f5a05cad0ff3b1d4c663c196c0d10e44  ./cern-ca-bundle.pem
 0ea70fcd3464b11ce170505b25a2d50d40eeba0f25b28e29715c3f46d76fceba  ./effect1_crossdetector.png
 aee4c2dee472ea08bfca65793e4341d58953d8c92f9ab52e3f0d999383719889  ./parallel_http_source.py
