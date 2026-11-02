@@ -1,0 +1,41 @@
+{
+ "files": [
+  "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-1.root",
+  "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-10.root",
+  "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-11.root",
+  "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-12.root",
+  "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-13.root"
+ ],
+ "pt_min": 20.0,
+ "eta_max": 2.5,
+ "events": [
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-1.root",
+   "n": 41335,
+   "wall_s": 12.2
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-10.root",
+   "n": 100426,
+   "wall_s": 14.3
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-11.root",
+   "n": 102842,
+   "wall_s": 26.7
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-12.root",
+   "n": 100737,
+   "wall_s": 17.3
+  },
+  {
+   "uri": "root://eospublic.cern.ch//eos/opendata/cms/derived-data/PFNano/29-Feb-24/JetHT/Run2016G-UL2016_MiniAODv2_PFNanoAODv1/240218_191008/0000/nano_data2016_1-13.root",
+   "n": 99633,
+   "wall_s": 5.2
+  }
+ ],
+ "wall_s": 75.7,
+ "n": 444973,
+ "sha256": "358ed4a1698620cdbaf4cd5463ea975452b2b6e1e177d56b58790309c0894427"
+}
