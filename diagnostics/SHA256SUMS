@@ -34,6 +34,8 @@ d8335fbdcac1cafc45b9fe82550b138aad6c630aedacff1886cc8d269d88647f  ./multibranch_
 3b172cf6181d51e666f94df8252090343914139e3b84513f5915750921a67219  ./phase-scan-2026-10-24.txt
 53236851d4fa9c5539cbba63980203a61a6d4b4548e027df8bc0a114b699f93a  ./phase_scan.py
 f101d6a35ae349e6a0986a085091e18390a5783062f7f5c2af0ab136a1229ff1  ./precision-constants-2026-11-01.json
+850737390f24cbf77b3d83b726d3dc573d6b133c31ac7b5ebf31084961bfd564  ./precision-detection-bound-2026-11-02.json
+fc95c58fdeef4638f644191b5eb96f2db69aa2ab8bd2b83b48504971e8f2e3ce  ./precision-detection-result-2026-11-02.md
 e281bdf193012b88ee802f5dc485d5ee6447b1bee0c7fafaae7c556deffb285b  ./precision-eta-model-2026-11-02.json
 21f125c531c57da2344abf9c11f1541c7c7eb5cc382a0f81a15517c89439d190  ./precision-eta-result-2026-11-02.md
 65cb4a6ace150af0a8cabc75d854db609ae218fdfe8c364efe271e55d4e8f7cb  ./precision-floor-scan-2026-11-01.json
@@ -43,6 +45,7 @@ da76e6ec64b77ccd2e5fc0a7b4943b17f95512f5a27f1a64d6a9c8d07dceb4b2  ./precision-sc
 41d56eddeec92f1054bcbd7159419bada272545849782b3d5e35c274e9c47f51  ./precision-tamper-2026-11-02.json
 7e4d23131aef031de197947f7d10a09bd6b55c02ed064bbe4996503dc75b3259  ./precision-tamper-result-2026-11-02.md
 3eff77ebc7f9babbe1cedaf9763d790cbffc52aad1cdd8f342331b2c7beffa16  ./precision_constants.py
+3ad8b7505cdd097d37219c1bba3061668a91aca313c0abb445bfc850e9ec8195  ./precision_detection_bound.py
 9651ffd8b62e23d0add982acdf706c81a3da5aa9e6fd80b1288a6a5d5b113f9c  ./precision_eta_model.py
 c9914d7df5a372bea2aeeb6276eab72c23574cd8dc72386b34f57fc6dd2b06bc  ./precision_floor_scan.py
 71080743bf1942401bfa17f22f3b3e67312129cccd0b967d5eacee1066d6b645  ./precision_interval_sensitivity.py
