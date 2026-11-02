@@ -72,3 +72,17 @@ range or bin is changed after this card.
   here.
 - No entropy claim is made for pT or mass; the certified floor is reported
   as a floor under the stated analysis grid.
+
+## Result (post-hoc, 2026-11-02)
+
+- **P1: pass.** The octave scan recovers b_m = 10 in every populated octave
+  with on-grid fraction 1.0000 for both variables.
+- **P2 (pT): fail.** Max |residual| = 0.411 bit at b = 16; the transition
+  residual reaches -0.174 bit at b = 13.
+- **P3 (mass): fail.** Max |residual| = 0.665 bit at b = 15; the b = 9-14
+  band also fails (0.458 bit at b = 13).
+- **P4: pass.** The calibrated density scale is 0.69 (pT) and 0.58 (mass),
+  both below one.
+- **P5: as stated.**
+
+Full tables and interpretation: `diagnostics/noncircular-result-2026-11-02.md`.
