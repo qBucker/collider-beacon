@@ -61,9 +61,9 @@ def gumbel_loc(m):
     )
 
 
-def octave_cells(e, b):
+def octave_cells(e, b, bm=BM):
     """(r, k_max, m_eff, u) for octave e at analysis resolution b."""
-    u = 2.0 ** (e - BM)
+    u = 2.0 ** (e - bm)
     r = (2 * math.pi / (1 << b)) / u
     k = math.ceil(r)
     if abs(r - round(r)) < 1e-12:
@@ -72,13 +72,13 @@ def octave_cells(e, b):
     return r, k, max(frac * (1 << b), 2.0), u
 
 
-def model_curve(M, n, bs=BS):
+def model_curve(M, n, bs=BS, bm=BM):
     """Predicted (h, eta, N, octave) for each b."""
     rows = []
     for b in bs:
         best = None
         for e in range(E_MIN, E_MAX + 1):
-            r, k, meff, u = octave_cells(e, b)
+            r, k, meff, u = octave_cells(e, b, bm)
             lam = n * M * u * k
             N = lam + math.sqrt(lam) * gumbel_loc(meff)
             if best is None or N > best[0]:
@@ -116,13 +116,13 @@ def measure_curve(x, n, bs=BS):
     return rows
 
 
-def calibrate_M(x, n):
+def calibrate_M(x, n, bm=BM):
     """Single-parameter calibration: match h_pred(b=8) to h_meas(b=8)."""
     meas8 = measure_curve(x, n, (8,))[0]["h_meas"]
     lo, hi = 0.05, 0.30
     for _ in range(80):
         mid = 0.5 * (lo + hi)
-        pred8 = model_curve(mid, n, (8,))[0]["h_pred"]
+        pred8 = model_curve(mid, n, (8,), bm)[0]["h_pred"]
         if pred8 > meas8:
             lo = mid
         else:
@@ -162,13 +162,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--glob", default=os.path.join(ROOT, "c5G", "*.npz"))
     ap.add_argument("--out", default=OUT)
+    ap.add_argument("--bm", type=int, default=BM)
     args = ap.parse_args()
 
     paths = sorted(glob.glob(args.glob))
     out = {
         "date": "2026-11-02",
         "alpha": ALPHA,
-        "b_mantissa": BM,
+        "b_mantissa": args.bm,
         "model": "p_max = M u_e ceil(r_e); N = lam + sqrt(lam) G(m_eff); CP alpha/2^b",
         "keys": {},
     }
@@ -183,8 +184,8 @@ def main():
         x = np.concatenate(xs)
         n = int(len(x))
         meas = measure_curve(x, n)
-        M, h8 = calibrate_M(x, n)
-        pred = model_curve(M, n)
+        M, h8 = calibrate_M(x, n, args.bm)
+        pred = model_curve(M, n, bm=args.bm)
         for pm, mm in zip(pred, meas):
             pm["h_meas"] = mm["h_meas"]
             pm["n_max_meas"] = mm["n_max"]
@@ -198,7 +199,7 @@ def main():
             "rows": pred,
             "max_abs_dh": max(abs(r["dh"]) for r in pred),
             "max_abs_deta": max(abs(r["eta_resid"]) for r in pred),
-            "boundaries": boundaries(M, n),
+            "boundaries": boundaries(M, n, bm=args.bm),
         }
         print(f"\n{key}: n={n}  M={M:.5f}  "
               f"max|dh|={out['keys'][key]['max_abs_dh']:.4f} bit  "
