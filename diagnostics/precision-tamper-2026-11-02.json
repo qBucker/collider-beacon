@@ -1,0 +1,239 @@
+{
+ "date": "2026-11-02",
+ "key": "lead_phi",
+ "n": 5211771,
+ "threshold": 0.999,
+ "cases": {
+  "honest": {
+   "octaves": {
+    "-8": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4576
+    },
+    "-7": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 6620
+    },
+    "-6": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 7895
+    },
+    "-5": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8183
+    },
+    "-4": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8191
+    },
+    "-3": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192
+    },
+    "-2": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192
+    },
+    "-1": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192
+    },
+    "0": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192
+    },
+    "1": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4678
+    }
+   },
+   "b_global": 12
+  },
+  "truncate_11bit": {
+   "octaves": {
+    "-8": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 3277
+    },
+    "-7": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 3953
+    },
+    "-6": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4093
+    },
+    "-5": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4096
+    },
+    "-4": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4096
+    },
+    "-3": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4096
+    },
+    "-2": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4096
+    },
+    "-1": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4096
+    },
+    "0": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4096
+    },
+    "1": {
+     "b": 11,
+     "on_grid_fraction": 1.0,
+     "n_unique": 2340
+    }
+   },
+   "b_global": 11
+  },
+  "uniform_quantizer_4096": {
+   "octaves": {
+    "-5": {
+     "b": 16,
+     "on_grid_fraction": 0.0,
+     "n_unique": 40,
+     "no_pass_in_range": true
+    },
+    "-4": {
+     "b": 16,
+     "on_grid_fraction": 0.0,
+     "n_unique": 82,
+     "no_pass_in_range": true
+    },
+    "-3": {
+     "b": 13,
+     "on_grid_fraction": 0.012345679012345678,
+     "n_unique": 162,
+     "no_pass_in_range": true
+    },
+    "-2": {
+     "b": 13,
+     "on_grid_fraction": 0.006134969325153374,
+     "n_unique": 326,
+     "no_pass_in_range": true
+    },
+    "-1": {
+     "b": 12,
+     "on_grid_fraction": 0.009202453987730062,
+     "n_unique": 652,
+     "no_pass_in_range": true
+    },
+    "0": {
+     "b": 12,
+     "on_grid_fraction": 0.009202453987730062,
+     "n_unique": 1304,
+     "no_pass_in_range": true
+    },
+    "1": {
+     "b": 12,
+     "on_grid_fraction": 0.009402283411685695,
+     "n_unique": 1489,
+     "no_pass_in_range": true
+    }
+   },
+   "b_global": null
+  },
+  "octave1_half_step": {
+   "octaves": {
+    "-8": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4576
+    },
+    "-7": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 6620
+    },
+    "-6": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 7895
+    },
+    "-5": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8183
+    },
+    "-4": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8191
+    },
+    "-3": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192
+    },
+    "-2": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192
+    },
+    "-1": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192
+    },
+    "0": {
+     "b": 12,
+     "on_grid_fraction": 1.0,
+     "n_unique": 8192
+    },
+    "1": {
+     "b": 13,
+     "on_grid_fraction": 1.0,
+     "n_unique": 4677
+    }
+   },
+   "b_global": 12
+  }
+ },
+ "sparse_flips": [
+  {
+   "k": 100,
+   "on_grid_fraction_b12": 0.9999808126642555,
+   "detected_at_threshold": false
+  },
+  {
+   "k": 1000,
+   "on_grid_fraction_b12": 0.9998081266425558,
+   "detected_at_threshold": false
+  },
+  {
+   "k": 10000,
+   "on_grid_fraction_b12": 0.9980812664255586,
+   "detected_at_threshold": true
+  }
+ ],
+ "detection_limit_k": 5212,
+ "honest_on_grid_b12": 1.0
+}
