@@ -92,3 +92,9 @@ cross-product test is ATLAS.
 
 **P3 PENDING.** The ATLAS raw `jet_phi` is not stored in the smoke products
 (only derived 8-bit bits); a single-file extraction is the next step.
+
+**P3 RESOLVED 2026-11-02.** The raw leading-jet azimuth arrays from the
+smoke (`phase0/atlas/smoke2.partial/*.phis.npy`, n = 597,965) were used
+directly: ATLAS is full float32 (b = 23 in every octave; on-grid 0.00222 at
+b = 12). See `predictions/2026-11-02-atlas-precision-crosstest.md` and
+`diagnostics/precision-eta-result-2026-11-02.md`.
